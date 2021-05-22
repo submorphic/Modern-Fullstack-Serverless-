@@ -144,5 +144,11 @@ faster time to market, decreasing overall development time and,
 therefore, development costs.
 
 
+##### DEVELOPER VELOCITY
+
+With fewer features to build, developer velocity increases. 
+Being able to spin up the types of features that are typical for most applications (e.g., databases, authentication, storage, and APIs) allows you toquickly focus on writing the core functionality and business logic for the features that you want to deliver.
+
+
 
 
