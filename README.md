@@ -50,6 +50,17 @@ cater to specific application requirements as BaaS (Backend as a
 Service) offerings. Put simply, serverless computing = FaaS +
 BaaS.
 
+Backend as a service (BaaS) typically refers to managed services like
+databases (Firestore, Amazon DynamoDB), authentication services
+(Auth0, Amazon Cognito), and artificial intelligence services
+(Amazon Rekognition, Amazon Comprehend), among other managed
+services. 
+
+Berkeley’s redefinition of what serverless means
+underscores what is happening in the broader spectrum of this
+discussion as cloud providers begin to build more and better-managed
+services and put them in this bucket of serverless.
+
 
 
 
