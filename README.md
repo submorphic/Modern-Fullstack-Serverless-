@@ -211,5 +211,29 @@ to some extent how cloud infrastructure works, and are looking for
 something that will work with other cloud providers in addition to
 AWS.
 
+### THE AWS SERVERLESS APPLICATION MODEL
+
+The AWS Serverless Application Model (AWS SAM) is an open
+source framework, released November 18, 2016, and built and
+maintained by AWS and the community. This framework only
+supports AWS.
+
+SAM allows you to build serverless applications by defining the API
+Gateway APIs, AWS Lambda functions, and Amazon DynamoDB
+tables needed by your serverless application in YAML files.
+It uses a combination of YAML configuration and function code and a CLI to
+create, manage, and deploy serverless applications.
+
+One advantage of SAM is that it is an extension of AWS
+CloudFormation, which is very powerful and allows you to do almost
+anything in AWS. This can also be a disadvantage to developers new
+to cloud computing and not familiar with AWS services, permissions,
+roles, and terminology, as you have to already be familiar with how
+the services work, the naming conventions to set them up, and how to
+wire it all together.
+
+SAM is a good choice if you are familiar with AWS and are only
+deploying your serverless applications to AWS.
+
 
 
