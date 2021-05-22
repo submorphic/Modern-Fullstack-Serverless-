@@ -120,6 +120,29 @@ based or on-premises infrastructures differ greatly.
 With the traditional approach, you often paid for computing resources
 whether or not they were utilized. 
 
-This meant that if you wanted to make sure your application would scale, you needed to prepare for the largest workload you thought you might see regardless of whether you actually reached that point. 
+This meant that if you wanted to make sure your application would scale, you needed to prepare for the largest workload you thought you might see regardless of whether you actually reached that point paying for unused resources for the majority of the life of your application.
+
+With serverless technologies, you pay only for what you use. With
+FaaS, you’re billed based on the number of requests for your
+functions, the time it takes for your function code to execute, and the
+reserved memory for each function. With managed services like
+Amazon Rekognition, you are only charged for the images processed
+and minutes of video processed, etc.—again paying only for what
+you use.
+
+This allows you to build features and applications with essentially no
+up-front infrastructure costs. Only if your application begins seeing
+increasing adoption and scaling do you begin to have to pay for the
+service.
+
+The bill from your cloud provider is only one part of the total cost of
+your cloud infrastructure—there’s also the operations’ salaries. That
+cost decreases if you have fewer ops resources.
+
+In addition, building applications in this way usually facilitates a
+faster time to market, decreasing overall development time and,
+therefore, development costs.
+
+
 
 
