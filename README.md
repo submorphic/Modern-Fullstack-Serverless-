@@ -236,4 +236,30 @@ SAM is a good choice if you are familiar with AWS and are only
 deploying your serverless applications to AWS.
 
 
+### AMPLIFY FRAMEWORK
+
+The Amplify Framework is a combination of four things: CLI, client
+library, toolchain, and web-hosting platform. Amplify’s purpose is to
+provide an easy way for developers to build and deploy full stack
+web and mobile applications that leverage the cloud. It enables not
+only features such as serverless functions and authentication, but alsoGraphQL APIs, machine learning (ML), storage, analytics, push
+notifications, and more.
+
+Amplify provides an easy entry point into the cloud by doing away
+with terminology and acronyms that may be unfamiliar to newcomers
+to AWS and instead uses a category-name approach for referring to
+services. Rather than referring to the authentication service as
+Amazon Cognito, it’s referred to as auth, and the framework just uses
+Amazon Cognito under the hood.
+
+HOW DO THE FOUR PIECES FIT TOGETHER?
+
+The CLI allows you to create, configure, and deploy cloud services from the command line.
+
+The Client library allows you to connect to and interact with these cloud services from your web or mobile application.
+
+The toolchain helps facilitate and speed development by doing things like generating code and serverless function boilerplates.
+
+The hosting platform allows you to deploy your application to a live domain complete with atomic deployments, continuous integration (CI), continuous deployment (CD), custom domains, and more.
+
 
