@@ -112,6 +112,14 @@ Not having to worry about scaling your servers and databases is a
 great advantage. It’s one less thing you have to worry about when
 architecting your application. 
 
+##### COST
 
+The pricing models of serverless architectures and traditional cloud-
+based or on-premises infrastructures differ greatly.
+
+With the traditional approach, you often paid for computing resources
+whether or not they were utilized. 
+
+This meant that if you wanted to make sure your application would scale, you needed to prepare for the largest workload you thought you might see regardless of whether you actually reached that point. 
 
 
