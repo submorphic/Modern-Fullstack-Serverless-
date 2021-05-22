@@ -167,3 +167,18 @@ performs best.
 
 Because of the increase in developer velocity, serverless applications usually enable you to A/B test different ideas much more quickly and easily.
 
+
+##### LESS CODE
+
+Most engineers will agree that, at the end of the day, code is a
+liability. What has value is the feature that the code delivers, not the
+code itself. When you find ways to deliver these features while
+simultaneously limiting the amount of code you need to maintain, and
+even doing away with the code completely, you are reducing overall
+complexity in your application.
+
+With less complexity comes fewer bugs, easier onboarding for new
+engineers, and overall less cognitive load for those maintaining and
+adding new features. A developer can hook into these services and
+implement features with no knowledge of the actual backend
+implementation and with little to no backend code at all.
