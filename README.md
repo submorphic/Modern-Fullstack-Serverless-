@@ -34,3 +34,22 @@ popularity of this philosophy, there has also been an explosion of
 services and tools made available from startups and cloud providers
 to provide offerings that simplify backend complexity.
 
+
+For an academic take on what serverless means, you may wish to
+read the 2019 paper written by a group at UC Berkeley, “Cloud
+Programming Simplified: A Berkeley View on Serverless
+Computing,” . 
+
+In this paper, the authors expanded the definition of
+serverless:
+
+While cloud functions—packaged as FaaS (Function as a Service)
+offerings—represent the core of serverless computing, cloud
+platforms also provide specialized serverless frameworks that
+cater to specific application requirements as BaaS (Backend as a
+Service) offerings. Put simply, serverless computing = FaaS +
+BaaS.
+
+
+
+
