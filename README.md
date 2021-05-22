@@ -150,5 +150,20 @@ With fewer features to build, developer velocity increases.
 Being able to spin up the types of features that are typical for most applications (e.g., databases, authentication, storage, and APIs) allows you toquickly focus on writing the core functionality and business logic for the features that you want to deliver.
 
 
+##### EXPERIMENTATION
 
+If you are not investing a lot of time building out repetitive features,
+you are able to experiment more easily and with less risk.
+
+When shipping a new feature, you often assess the risk (time and
+money involved with building the feature) against the possible return
+on investment (ROI). 
+
+As the risk involved in trying out new things decreases, you are free to test out ideas that in the past may not have seen the light of day.
+
+A/B testing (also known as bucket testing or split testing) is a way to
+compare multiple versions of an application to determine which one
+performs best. 
+
+Because of the increase in developer velocity, serverless applications usually enable you to A/B test different ideas much more quickly and easily.
 
