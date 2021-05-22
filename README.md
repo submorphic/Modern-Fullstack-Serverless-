@@ -93,4 +93,25 @@ They are serverless in the sense that they scale
 seamlessly, don’t require any server operations or need to manage
 uptime, and, most importantly, are essentially codeless.
 
+#### Benefits of a Serverless Architecture 
+
+##### SCALABILITY
+
+One of the primary advantages of going serverless is out-of-the-box
+scalability. When building your application, you don’t have to worry
+about what would happen if the application becomes wildly popular
+and you onboard a large number of new users quickly—the cloud
+provider will handle this for you.
+
+The cloud provider automatically scales your application, running the
+code in response to each interaction. In a serverless function, your
+code runs in parallel and individually processes each trigger (in turn,
+scaling with the size of the workload).
+
+Not having to worry about scaling your servers and databases is a
+great advantage. It’s one less thing you have to worry about when
+architecting your application. 
+
+
+
 
