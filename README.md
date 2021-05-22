@@ -182,3 +182,34 @@ engineers, and overall less cognitive load for those maintaining and
 adding new features. A developer can hook into these services and
 implement features with no knowledge of the actual backend
 implementation and with little to no backend code at all.
+
+
+## Different Implementations of Serverless
+
+Let’s take a look at the different ways that you can build serverless
+applications as well as some of the differences between them.
+
+### SERVERLESS FRAMEWORK
+
+One of the first serverless implementations, the Serverless
+Framework, is the most popular. It is a free and open source
+framework, launched in October 2015 under the name JAWS, and
+written using Node.js. At first, the Serverless Framework only
+supported AWS, but then it added support for cloud providers like
+Google and Microsoft Azure, among others.
+The Serverless Framework utilizes a combination of a configuration
+file (serverless.yml), CLI, and function code to provide a nice
+experience for people wanting to deploy serverless functions and
+other AWS services to the cloud from a local environment. Getting up
+and running with the Serverless Framework can present a somewhat
+steep learning curve, especially for developers new to cloud
+computing. There is much terminology to learn and a lot that goes
+into understanding how cloud services work in order to build
+anything more than just a “Hello World” application.
+Overall, the Serverless Framework is a good option if you understand
+to some extent how cloud infrastructure works, and are looking for
+something that will work with other cloud providers in addition to
+AWS.
+
+
+
