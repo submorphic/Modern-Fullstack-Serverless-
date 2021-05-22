@@ -62,5 +62,27 @@ discussion as cloud providers begin to build more and better-managed
 services and put them in this bucket of serverless.
 
 
+### Characteristics of a Serverless Application
+
+Now that you understand something about the philosophy around
+serverless, what are some of the characteristics of a serverless
+application?
+
+Serverless is following some traits and characteristics that are
+generally agreed upon by the industry.
+
+#### DECREASED OPERATIONAL RESPONSIBILITIES
+
+Serverless architectures typically allow you to shift more of your
+operational responsibilities to a cloud provider or third party.
+
+When you decide to implement FaaS, the only thing you should have
+to worry about is the code running in your function. 
+
+All of the server patching, updating, maintaining, and upgrading is no longer your responsibility. 
+
+This goes back to the core of what cloud computing, and by extension serverless, attempts to offer: a way to spend less time managing infrastructure and spend more time building features and delivering business value.
+
+
 
 
