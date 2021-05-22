@@ -84,5 +84,13 @@ All of the server patching, updating, maintaining, and upgrading is no longer yo
 This goes back to the core of what cloud computing, and by extension serverless, attempts to offer: a way to spend less time managing infrastructure and spend more time building features and delivering business value.
 
 
+#### HEAVY USE OF MANAGED SERVICES
+
+Managed services usually assume responsibility for providing a
+defined set of features. 
+
+They are serverless in the sense that they scale
+seamlessly, don’t require any server operations or need to manage
+uptime, and, most importantly, are essentially codeless.
 
 
