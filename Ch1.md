@@ -435,3 +435,8 @@ terminal:
 
 ~ cd react-amplify-project 
 
+Next, you can create an Amplify project. To do so, you’ll run the
+init command:
+
+~ amplify init
+
