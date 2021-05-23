@@ -252,3 +252,43 @@ The toolchain helps facilitate and speed development by doing things like genera
 
 The hosting platform allows you to deploy your application to a live domain complete with atomic deployments, continuous integration (CI), continuous deployment (CD), custom domains, and more.
 
+
+### Full Stack Serverless on AWS
+
+Full stack serverless is about providing developers with everything
+needed on both ends of the stack to accomplish their objective of
+building scalable applications as quickly as possible. Here, we’ll look
+at how you can build applications in this way using AWS tools and
+services.
+
+#### Amplify CLI
+
+If you’re starting out with AWS, the sheer number of services can be
+overwhelming. In addition to the many services to sort between, each
+service often has its own steep learning curve. To help ease this, AWS
+has created the Amplify CLI.
+The Amplify CLI provides an easy entry point for developers
+wanting to build applications on AWS. The CLI allows developers to
+create, configure, update, and delete cloud services directly from their
+frontend environment.
+
+Instead of a service-name approach (as used by the AWS Console and
+many other tools, like CloudFormation), the CLI takes a category-
+name approach. AWS has many service names (for example, Amazon
+S3, Amazon Cognito, and Amazon Pinpoint), which can be confusing
+to new developers. Rather than using the service names to create andconfigure these services, the CLI uses names like storage (Amazon
+S3), auth (Amazon Cognito), and analytics (Amazon Pinpoint) to
+give you a way to understand what the service actually does versus
+simply giving the service name.
+
+The CLI has a host of commands that allow you to create, update,
+configure, and remove services without having to leave your frontend
+environment. You can also spin up and deploy new environments
+using the CLI in order to test out new features without affecting the
+main environment.
+
+Once you’ve created and deployed features using the CLI, you can
+then use the Amplify client libraries to begin interacting with the
+services from your client-side application.
+
+
