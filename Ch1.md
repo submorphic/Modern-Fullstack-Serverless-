@@ -2,9 +2,6 @@
 
 ### Modern Serverless Philosophy: 
 
-```javascript 
-let i = 'hello';
-```
 
 The term serverless is commonly associated with FaaS. Though you
 will find varying definitions as to what it means, the term has recently
@@ -433,16 +430,19 @@ IAM user.
 ### Create a project 
 
 terminal: 
-
+```javascript
 ~ npx create-react-app react-amplify-project
 
 ~ cd react-amplify-project 
 
+```
+
 Next, you can create an Amplify project. To do so, you’ll run the
 init command:
 
+```javascript
 ~ amplify init
-
+```
 
 This will walk you through the following steps:
 
