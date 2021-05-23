@@ -426,3 +426,12 @@ dashboard. From here, you can accept the defaults by clicking Next:
 Permissions, Next: Tags, Next: Review, and Create user to create the
 IAM user.
 
+
+### Create a project 
+
+terminal: 
+
+~ npx create-react-app react-amplify-project
+
+~ cd react-amplify-project 
+
