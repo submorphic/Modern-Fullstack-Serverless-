@@ -440,3 +440,51 @@ init command:
 
 ~ amplify init
 
+
+This will walk you through the following steps:
+
+1. Enter a name for the project.
+This will be the local name for the project, usually
+something that describes what the project is or what it does.
+
+2. Enter a name for the environment.
+This will be a reference to the initial environment that you
+will be working in. Typical environments in this workflow
+could be something like dev, local, or prod but could be
+anything that makes sense to you.
+
+3. Choose your default editor.
+This will set your editor preference. The CLI will later use
+this preference to open your text editor with files that are
+part of the current project.
+
+4. Choose the type of app that you’re building.This will determine whether the CLI should configure, build,
+and run commands if you are using JavaScript. For this
+example, choose javascript.
+
+5. What JavaScript framework are you using?
+This will determine a few base build and start commands.
+For this example, choose react.
+
+6. Choose your source directory path.
+This allows you to set the directory where your source code
+will live. For this example, choose src.
+
+7. Choose your distribution directory path.
+For web projects, this will be the folder containing the
+complied JavaScript source code as well as your favicon,
+HTML, and CSS files. For this example, choose build.
+
+8. Choose your build command.
+This specifies the command for compiling and bundling your
+JavaScript code. For this example, use npm run-script build.
+
+9. Choose your start command.
+This specifies the command to server your application
+locally. For this example, use npm run-script start.
+
+10. Do you want to use an AWS profile?
+Here, choose Y and then pick the AWS profile you created
+when you ran amplify configure.
+
+
