@@ -485,3 +485,34 @@ Here, choose Y and then pick the AWS profile you created
 when you ran amplify configure.
 
 
+Now, the Amplify CLI will initialize your new Amplify project.
+When the initialization is complete, you will have two additional
+resources created for you in your project: a file called aws-exports
+located in the src directory and a folder named amplify located in
+your root directory.The aws-exports file
+The aws-exports file is a key-value pairing of the resource
+categories created for you by the CLI along with their credentials.
+
+The amplify folder
+
+This folder holds all of the code and configuration files for your
+Amplify project. In this folder you’ll see two subfolders: the
+backend and #current-cloud-backend folders.
+
+The backend folder
+
+This folder contains all of the local code for your project such
+as the GraphQL schema for an AppSync API, the source code
+for any serverless functions, and infrastructure as code
+representing the current local status of the Amplify project.
+
+The #current-cloud-backend folders
+
+This folder holds the code and configurations that reflect what
+resources were deployed in the cloud with your last Amplify
+push command. It helps the CLI differentiate between the
+configuration of the resources already provisioned in the
+cloud and what is currently in your local backend directory
+(which reflects your local changes).
+
+
