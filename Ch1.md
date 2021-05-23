@@ -408,5 +408,21 @@ configure command:
 
 This will walk you through the following steps:
 
+1. Specify the AWS region.
+This will allow you to choose the region in which you’d like
+to create your user (and, by extension, the services
+associated with this user). Choose the region closest to you
+or a preferred region.
 
+2. Specify the username.
+This name will be the local reference of the user that you
+will be creating in your AWS account. I suggest using a
+name that you’ll be able to recognize later when referencing
+it, such as amplify-cli-us-east-1-user or mycompany-cli-
+admin.
+
+Once you enter your name, the CLI will open up the AWS IAM
+dashboard. From here, you can accept the defaults by clicking Next:
+Permissions, Next: Tags, Next: Review, and Create user to create the
+IAM user.
 
