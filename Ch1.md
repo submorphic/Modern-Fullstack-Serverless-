@@ -395,5 +395,18 @@ npm version 5.x or greater installed on your machine.
 
 To install Node.js, it's recommended either visiting the Node.js installation page and following the installation instructions or using Node Version Manager (NVM).
 
+After the CLI has been installed, you next need to configure it with
+an identity and access management (IAM) user in your AWS account.
+To do so, you’ll configure the CLI with a reference to a set of user
+credentials (access key ID and secret access key). Using these
+credentials, you’ll be able to create AWS services on behalf of this
+user directly from the CLI.
+To create a new user and configure the CLI, you’ll run the
+configure command:
+
+~ amplify configure
+
+This will walk you through the following steps:
+
 
 
