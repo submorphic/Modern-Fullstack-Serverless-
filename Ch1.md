@@ -292,3 +292,90 @@ then use the Amplify client libraries to begin interacting with the
 services from your client-side application.
 
 
+#### AMPLIFY CLIENT
+
+Building full stack applications requires a combination of both client-
+side tooling and backend services. In the past, the main way to
+interact with AWS services was using an AWS software development
+kit (SDK) such as Java, .NET, Node.js, and Python. These SDKs
+work well, but none of them are particularly well-suited for client-
+side development. Before Amplify, there was no simple method for
+building client-side applications using AWS. If you look at the
+documentation for the AWS Node.js SDK, you’ll also notice that it
+presents a steep learning curve for developers new to AWS.
+The Amplify client is a library made especially to provide an easy-to-
+use API for JavaScript applications that need to interact with AWSservices. Amplify also has client SDKs for React Native, native iOS,
+and native Android.
+
+The approach that the Amplify client takes is to provide a higher
+level of abstraction and bake in best practices to provide a
+declarative, easy-to-use API. At the same time, it gives you full
+control over the interactions with your backend. It’s also built
+especially with the client in mind, with features like WebSocket and
+GraphQL subscription support. It utilizes localStorage for the
+browser and AsyncStorage for React Native to store security tokens
+like IdTokens and AccessTokens to persist user authentication.
+Amplify also provides UI components for popular frontend and
+mobile frameworks including React, React Native, Vue, Angular,
+Ionic, native Android, and native iOS. These framework-specific
+components allow you to quickly get up and running with common
+features like authentication and complex object storage and retrieval
+without having to build out the frontend UI and deal with state.
+The Amplify Framework does not support the entire suite of AWS
+services; instead, it supports a subset of them with almost all of them
+falling into the category of serverless. Using Amplify, it wouldn’t
+make much sense to offer support for interacting with with EC2, but
+it makes a lot of sense to offer support for working with
+Representational State Transfer (REST) and GraphQL APIs.
+Amplify was created as an end-to-end solution to fill a previously
+unfilled gap, but it also encompasses a new way to build full stack
+cloud applications.AWS APPSYNC
+AWS AppSync is a managed API layer that uses GraphQL to make it
+easy for applications to interact with any data source, REST API, or
+microservice.
+
+The API layer is one of the most important parts of an application.
+Modern applications typically interact with a large number of
+backend services and APIs; things like databases, managed services,
+third-party APIs, and storage solutions, among others. Microservice
+architecture is the usual term used for a large application built using a
+combination of modular components or services.
+Most services and APIs will have varying implementation details,
+which creates a challenge when you’re working with a microservice
+architecture. This leads to inconsistent and sometimes messy code, as
+well as more cognitive load on the frontend developers making
+requests to these APIs.
+
+One good approach to working with a microservice architecture is to
+provide a consistent API gateway layer that then takes all of the
+requests and forwards them on to the backend services. This allows a
+consistent interaction layer for your client to interact with, making
+development easier on the frontend.
+
+GraphQL, a technology created and open sourced by Facebook,
+offers an especially good abstraction for creating an API gateway.
+GraphQL introduces a defined and consistent specification for
+interacting with APIs in the form of three operations: queries (reads),
+mutations (writes/updates), and subscriptions (real-time data). Theseoperations are defined as part of a main schema that also provides a
+contract between the client and the server in the form of GraphQL
+types. GraphQL operations are not bound to any specific data source,
+so you as a developer are free to use them to interact with anything
+from a database, an HTTP endpoint, a microservice, or even a
+serverless function.
+
+Typically, when building a GraphQL API, you need to deal with
+building, deploying, maintaining, and configuring your own API.
+With AWS AppSync, you can instead offload the server and API
+management as well as the security to AWS.
+Modern applications often also have concerns such as real-time and
+offline support. Another benefit of AppSync is that it has built-in
+support for offline (Amplify client SDKs) as well as real time
+(GraphQL subscriptions) to enable developers to build these types of
+applications.
+
+In this book, you will be using AWS AppSync along with various
+data sources (like DynamoDB for NoSQL and AWS Lambda for
+serverless functions) as the main API layer.
+
+
+
