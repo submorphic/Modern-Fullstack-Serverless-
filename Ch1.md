@@ -381,3 +381,19 @@ In this book, you will be using AWS AppSync along with various
 data sources (like DynamoDB for NoSQL and AWS Lambda for
 serverless functions) as the main API layer.
 
+
+### Installing and Configuring the Amplify CLI
+
+To get started, you first need to install and configure the Amplify
+CLI:
+~ npm install -g @aws-amplify/cli
+
+NOTE:
+
+To use the CLI, you will first need to have Node.js version 10.x or greater and
+npm version 5.x or greater installed on your machine.
+
+To install Node.js, it's recommended either visiting the Node.js installation page and following the installation instructions or using Node Version Manager (NVM).
+
+
+
