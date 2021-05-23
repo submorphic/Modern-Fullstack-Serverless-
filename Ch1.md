@@ -329,7 +329,10 @@ it makes a lot of sense to offer support for working with
 Representational State Transfer (REST) and GraphQL APIs.
 Amplify was created as an end-to-end solution to fill a previously
 unfilled gap, but it also encompasses a new way to build full stack
-cloud applications.AWS APPSYNC
+cloud applications. 
+
+#### AWS APPSYNC
+
 AWS AppSync is a managed API layer that uses GraphQL to make it
 easy for applications to interact with any data source, REST API, or
 microservice.
@@ -340,6 +343,7 @@ backend services and APIs; things like databases, managed services,
 third-party APIs, and storage solutions, among others. Microservice
 architecture is the usual term used for a large application built using a
 combination of modular components or services.
+
 Most services and APIs will have varying implementation details,
 which creates a challenge when you’re working with a microservice
 architecture. This leads to inconsistent and sometimes messy code, as
@@ -348,25 +352,25 @@ requests to these APIs.
 
 One good approach to working with a microservice architecture is to
 provide a consistent API gateway layer that then takes all of the
-requests and forwards them on to the backend services. This allows a
-consistent interaction layer for your client to interact with, making
-development easier on the frontend.
+requests and forwards them on to the backend services.
+This allows a consistent interaction layer for your client to interact with, making development easier on the frontend.
 
 GraphQL, a technology created and open sourced by Facebook,
 offers an especially good abstraction for creating an API gateway.
+
 GraphQL introduces a defined and consistent specification for
 interacting with APIs in the form of three operations: queries (reads),
-mutations (writes/updates), and subscriptions (real-time data). Theseoperations are defined as part of a main schema that also provides a
-contract between the client and the server in the form of GraphQL
-types. GraphQL operations are not bound to any specific data source,
-so you as a developer are free to use them to interact with anything
-from a database, an HTTP endpoint, a microservice, or even a
-serverless function.
+mutations (writes/updates), and subscriptions (real-time data). 
+
+Theseoperations are defined as part of a main schema that also provides a contract between the client and the server in the form of GraphQL
+types. GraphQL operations are not bound to any specific data source, so you as a developer are free to use them to interact with anything 
+from a database, an HTTP endpoint, a microservice, or even a serverless function.
 
 Typically, when building a GraphQL API, you need to deal with
 building, deploying, maintaining, and configuring your own API.
 With AWS AppSync, you can instead offload the server and API
 management as well as the security to AWS.
+
 Modern applications often also have concerns such as real-time and
 offline support. Another benefit of AppSync is that it has built-in
 support for offline (Amplify client SDKs) as well as real time
@@ -376,6 +380,4 @@ applications.
 In this book, you will be using AWS AppSync along with various
 data sources (like DynamoDB for NoSQL and AWS Lambda for
 serverless functions) as the main API layer.
-
-
 
