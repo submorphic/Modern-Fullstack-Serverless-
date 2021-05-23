@@ -2,6 +2,9 @@
 
 ### Modern Serverless Philosophy: 
 
+```javascript 
+let i = 'hello';
+```
 
 The term serverless is commonly associated with FaaS. Though you
 will find varying definitions as to what it means, the term has recently
