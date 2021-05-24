@@ -522,4 +522,12 @@ cloud and what is currently in your local backend directory
 (which reflects your local changes).
 
 
+### Creating and Deploying Your First Service
+
+To create a new service, you can use the add command from
+Amplify:
+
+```javascript 
+amplify add auth 
+```
 
