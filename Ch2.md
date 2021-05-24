@@ -182,3 +182,28 @@ In app.js, you will then be able to create HTTP requests against
 whatever routes you create for your API (this example being a
 /coins route to fetch cryptocurrency).
 
+
+## Creating the /coins Route
+  
+Now that you have seen how the application is structured, let’s create
+a new route in app.js and return some data from it. The route that you
+will be creating is a /coins route. This route will be returning an
+object containing a coins array.
+  
+Let’s add the new route. Before the first app.get('/items')
+route, add the following code:
+  
+```javascript 
+  /* amplify/backend/function/cryptofunction/src/app.js /*
+app.get('/coins', function(req, res) {
+const coins = [
+{ name: 'Bitcoin', symbol: 'BTC', price_usd: "10000" },
+{ name: 'Ethereum', symbol: 'ETH', price_usd: "400" },
+{ name: 'Litecoin', symbol: 'LTC', price_usd: "150" }
+]
+res.json({
+coins})
+});  
+```
+  
+  
