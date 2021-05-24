@@ -603,3 +603,10 @@ with the following code:
   
   export default withAuthenticator(App)
 ``` 
+
+Now you can launch the app using: 
+
+```javascript 
+~ npm start 
+``` 
+
