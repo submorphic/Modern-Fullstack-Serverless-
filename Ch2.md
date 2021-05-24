@@ -15,3 +15,12 @@ function
 2. A GraphQL API connected to some type of data source
 (database, Lambda function, or HTTP endpoint)
 
+API Gateway is an AWS service that allows you to create API
+endpoints and route them to different services, often via a Lambda
+function. When you make an API call, it will route the request
+through API Gateway, invoke the function, and return the response.
+Using the Amplify CLI, you can create both the API Gateway
+endpoint as well as the Lambda function; the CLI will automatically
+configure the API to be able to invoke the Lambda function via an
+HTTP request.
+
