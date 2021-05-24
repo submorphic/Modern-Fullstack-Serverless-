@@ -150,3 +150,15 @@ cryptofunction. In the cryptofunction folder, you will see a
 couple of configuration files as well as an src directory where the
 main function code is located.
 
+Serverless functions are essentially just encapsulated applications
+running on their own. Because the function you created is in
+JavaScript, you’ll see that there are all of the things you’d typically
+see in any JavaScript application, including package.json and index.js
+files.
+
+Next, have a look at the function entry point located at src/index.js, in
+the cryptofunction folder. In this file you’ll see that there is a function
+called exports.handler. This is the entry point for the function
+invocation. When the function is invoked, this is the code that is run.
+
+
