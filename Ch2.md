@@ -162,3 +162,17 @@ called exports.handler. This is the entry point for the function
 invocation. When the function is invoked, this is the code that is run.
 
 
+You can handle the event directly in this function if you would like,
+but since you will be working with an API, a more useful way to do
+this is to proxy the path into an express app with routing (i.e.,
+http://yourapi/<somepath>). Doing this gives you multiple routes in
+a single function as well as multiple HTTP request methods like get,
+put, post, and delete for each route. The serverless expressframework provides an easy way to do this and has been built into the
+function boilerplate for you.
+  
+In index.js, you will see a line of code that looks like this:
+  
+```javascript   
+  awsServerlessExpress.proxy(server, event, context);  
+```
+  
