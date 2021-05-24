@@ -24,6 +24,7 @@ endpoint as well as the Lambda function; the CLI will automatically
 configure the API to be able to invoke the Lambda function via an
 HTTP request.
 
+
 ![1](https://user-images.githubusercontent.com/23625821/119357985-6f22a080-bca8-11eb-9780-f84b5ac4cf0c.png)
 
 
@@ -55,4 +56,18 @@ execute. This is in contrast to provisioning and paying for
 infrastructure like servers regardless of whether they are being
 utilized.
 Now that you know about serverless functions, let’s take a look at
-how you can create a serverless function and hook it up to an API
+how you can create a serverless function and hook it up to an API that will invoke it from an HTTP request.
+
+
+## Creating the React Application and Installing the Dependencies
+
+To get started, you’ll first need to create the React application. To do
+so, you can use npx:
+
+
+```javascript 
+  ~ npx create-react-app amplify-react-app
+  ~ cd amplify-react-app
+```
+
+
