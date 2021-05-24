@@ -81,3 +81,23 @@ only need the AWS Amplify library:
   ~ npm install aws-amplify
 ```
 
+After installing the dependencies, you can now initialize a new
+Amplify project in the root of the React application:
+
+
+```javascript 
+~ amplify init
+? Enter a name for the project: cryptoapp
+? Enter a name for the environment: local
+? Choose your default editor: <your-preferred-editor>
+? Choose the type of app that you're building: javascript
+? What javascript framework are you using: react
+? Source Directory Path: src
+? Distribution Directory Path: build
+? Build Command: npm run-script build
+? Start Command: npm run-script start
+? Do you want to use an AWS profile? Here, choose *Y* and
+pick the AWS
+profile you created when you ran `amplify configure`.
+
+```
