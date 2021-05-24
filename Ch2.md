@@ -138,5 +138,6 @@ To create the function, run the following command:
 ``` 
 
 You should now see a new subfolder located within the amplify
-directory at amplify/backend/function/cryptofunction.
+directory at ```javascript amplify/backend/function/cryptofunction. ``` 
+
 
