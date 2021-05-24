@@ -6,5 +6,5 @@ Full Stack Serverless: Modern Application Development with React, AWS, and Graph
 By:
 Nader Dabit 
 
-
-https://dev.to/salah856/modern-full-stack-serverless-part-i-34cb 
+Part 1:
+        https://dev.to/salah856/modern-full-stack-serverless-part-i-34cb 
