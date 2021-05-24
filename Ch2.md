@@ -27,3 +27,32 @@ HTTP request.
 ![1](https://user-images.githubusercontent.com/23625821/119357985-6f22a080-bca8-11eb-9780-f84b5ac4cf0c.png)
 
 
+## Creating and Deploying a Serverless Function
+
+At the core of many serverless applications are serverless functions.
+Serverless functions run your code in stateless compute containers
+that are event-driven, short-lived (may last for one invocation), and fully managed by the cloud provider of your choice. These functions
+scale seamlessly and do not require any server operations.
+While most people think of serverless functions as being invoked or
+triggered by an API call, these functions can also be triggered by a
+variety of different events. In addition to HTTP requests, a few
+popular ways to invoke a serverless function are via an image upload
+to a storage service, a database operation (like create, update, or
+delete), or even from another serverless function.
+Serverless functions scale automatically, so there’s no need to worry
+about your application if you get a large spike in traffic. The first time
+you invoke a function, the service provider will create an instance of
+the function and run its handler method to process the event. After the
+function finishes and returns a response, it will remain and process
+additional events if they come in. If another invocation happens while
+the first event is still processing, the service will then create another
+instance.
+Serverless functions also have a payment model that is different from
+traditional infrastructure. With services like AWS Lambda, you only
+pay for what you use and are charged based on the number of
+requests for your functions and the time it takes for your code to
+execute. This is in contrast to provisioning and paying for
+infrastructure like servers regardless of whether they are being
+utilized.
+Now that you know about serverless functions, let’s take a look at
+how you can create a serverless function and hook it up to an API
