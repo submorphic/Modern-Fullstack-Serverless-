@@ -559,4 +559,25 @@ authentication service, you can run the push command:
 ```javascript 
 ~ amplify push 
 ``` 
+4. Are you sure you want to continue?
+Choose Y.
 
+
+After the deployment is complete, your authentication service has
+successfully been created. Congratulations, you’ve deployed your
+first feature. Now, let’s test it out.
+
+There are several ways to interact with the authentication service in a
+React application. You can use the Auth class from Amplify, which
+has over 30 methods available (methods like signUp, signIn,
+signOut, etc.), or you can use the framework-specific components
+like withAuthenticator that will scaffold out an entire
+authentication flow, complete with preconfigured UI. Let’s try out the
+withAuthenticator higher-order (HOC) component.
+First, configure the React app to work with Amplify. To do so, open
+src/index.js and add the following code below the last import
+statement:
+
+```javascript 
+
+``` 
