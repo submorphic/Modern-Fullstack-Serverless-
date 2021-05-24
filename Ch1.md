@@ -528,6 +528,35 @@ To create a new service, you can use the add command from
 Amplify:
 
 ```javascript 
-amplify add auth 
+~ amplify add auth 
 ```
+
+This will walk you through the following steps:
+
+1. Do you want to use the default authentication and security
+configuration?
+
+This gives you the option of creating an authentication
+service using a default configuration (MFA on sign-up,
+password at sign-in), creating an authentication
+configuration with social providers, or creating a completely
+custom authentication configuration. For this example,
+choose Default configuration.
+
+2. How do you want users to be able to sign in?
+This will allow you to specify the required sign-in property.
+For this example, accept the default by choosing Username.
+
+3. Do you want to configure advanced settings?
+This will allow you to walk through additional advanced
+settings for things like additional sign-up attributes and
+Lambda triggers. You do not need any of these for this
+example, so accept the default by choosing No, I am done.
+Now, you’ve successfully configured the authentication
+service and are now ready to deploy. To deploy the
+authentication service, you can run the push command:
+
+```javascript 
+~ amplify push 
+``` 
 
