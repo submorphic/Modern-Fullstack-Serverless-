@@ -74,3 +74,10 @@ so, you can use npx:
   ~ cd amplify-react-app
 ```
 
+Next, you will need to install the dependencies. For this app, you’ll
+only need the AWS Amplify library:
+
+```javascript
+  ~ npm install aws-amplify
+```
+
