@@ -583,3 +583,11 @@ statement:
   import config from './aws-exports'
   Amplify.configure(config);
 ``` 
+
+Now, the app has been configured and you can begin interacting with
+the authentication service. Next, open src/App.js and update the file
+with the following code:
+
+```javascript 
+
+``` 
