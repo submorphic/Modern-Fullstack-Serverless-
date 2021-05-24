@@ -141,3 +141,12 @@ You should now see a new subfolder located within the amplify
 directory at ``` amplify/backend/function/cryptofunction ``` 
 
 
+## Walking Through the Code
+
+When you created this resource, a new folder in amplify/backend was
+created named function. All of the functions created by the CLI will
+be stored in this folder. For now, you only have a single function,
+cryptofunction. In the cryptofunction folder, you will see a
+couple of configuration files as well as an src directory where the
+main function code is located.
+
