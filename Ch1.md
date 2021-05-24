@@ -579,5 +579,7 @@ src/index.js and add the following code below the last import
 statement:
 
 ```javascript 
-
+  import Amplify from 'aws-amplify'
+  import config from './aws-exports'
+  Amplify.configure(config);
 ``` 
