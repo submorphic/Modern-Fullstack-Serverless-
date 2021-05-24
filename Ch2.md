@@ -24,3 +24,6 @@ endpoint as well as the Lambda function; the CLI will automatically
 configure the API to be able to invoke the Lambda function via an
 HTTP request.
 
+![1](https://user-images.githubusercontent.com/23625821/119357985-6f22a080-bca8-11eb-9780-f84b5ac4cf0c.png)
+
+
