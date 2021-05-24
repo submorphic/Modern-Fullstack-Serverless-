@@ -176,3 +176,9 @@ In index.js, you will see a line of code that looks like this:
   awsServerlessExpress.proxy(server, event, context);  
 ```
   
+This code is where the event, context, and path are proxied to the
+express server running in app.js.
+In app.js, you will then be able to create HTTP requests against
+whatever routes you create for your API (this example being a
+/coins route to fetch cryptocurrency).
+
