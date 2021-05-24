@@ -101,3 +101,38 @@ pick the AWS
 profile you created when you ran `amplify configure`.
 
 ```
+
+Now, both the Amplify project and the React app have been
+successfully created and you can begin adding new features.
+
+
+## Creating a New Serverless Function with the
+Amplify CLI
+In the next step, we’ll create the serverless function that you will be
+using for this app. The app you are building in this chapter is a
+cryptocurrency app. At first, you will hardcode an array of
+cryptocurrency information in the function and return it to the client.
+Later in this chapter, you’ll update this function to call another API
+(CoinLore) and asynchronously fetch and return data.
+To create the function, run the following command:
+
+```javascript 
+  ~ amplify add function
+? Select which capability you want to add: Lambda function
+? Provide a friendly name for your resource to be used as a
+label for
+this category in the project: cryptofunction
+? Provide the AWS Lambda function name: cryptofunction
+? Choose the function runtime that you want to use: NodeJS
+? Choose the function template that you want to use:
+Serverless express
+function (Integration with Amazon API Gateway)
+? Do you want to access other resources created in this
+project from
+your Lambda function? No
+? Do you want to invoke this function on a recurring
+schedule? No
+? Do you want to configure Lambda layers for this function?
+No
+? Do you want to edit the local Lambda function now? No
+``` 
