@@ -610,3 +610,20 @@ Now you can launch the app using:
 ~ npm start 
 ``` 
 
+### Deleting the Resources
+
+Once you no longer need a feature or a project, you can remove it
+using the CLI.
+To remove an individual feature, you can run the remove command:
+
+```javascript 
+  ~ amplify remove auth
+```
+To delete an entire Amplify project along with all of the
+corresponding resources that have been deployed in your account,
+you can run the delete command:
+
+```javascript 
+ ~ amplify delete 
+```
+
