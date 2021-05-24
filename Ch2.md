@@ -118,21 +118,25 @@ To create the function, run the following command:
 
 ```javascript 
   ~ amplify add function
-? Select which capability you want to add: Lambda function
-? Provide a friendly name for your resource to be used as a
-label for
-this category in the project: cryptofunction
-? Provide the AWS Lambda function name: cryptofunction
-? Choose the function runtime that you want to use: NodeJS
-? Choose the function template that you want to use:
-Serverless express
-function (Integration with Amazon API Gateway)
-? Do you want to access other resources created in this
-project from
-your Lambda function? No
-? Do you want to invoke this function on a recurring
-schedule? No
-? Do you want to configure Lambda layers for this function?
-No
-? Do you want to edit the local Lambda function now? No
+  ? Select which capability you want to add: Lambda function
+  ? Provide a friendly name for your resource to be used as a
+  label for
+  this category in the project: cryptofunction
+  ? Provide the AWS Lambda function name: cryptofunction
+  ? Choose the function runtime that you want to use: NodeJS
+  ? Choose the function template that you want to use:
+  Serverless express
+  function (Integration with Amazon API Gateway)
+  ? Do you want to access other resources created in this
+  project from
+  your Lambda function? No
+  ? Do you want to invoke this function on a recurring
+  schedule? No
+  ? Do you want to configure Lambda layers for this function?
+  No
+  ? Do you want to edit the local Lambda function now? No
 ``` 
+
+You should now see a new subfolder located within the amplify
+directory at amplify/backend/function/cryptofunction.
+
