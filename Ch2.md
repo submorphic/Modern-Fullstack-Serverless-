@@ -462,6 +462,7 @@ In the preceding function, we’ve imported the Axios library and then
 used it to make an API call to the CoinLore API. In the API call, you
 can pass in a start and limit parameter to the request to define
 the number of coins to return, as well as to define the starting point.
+  
 In the req parameter, there is an apiGateway property that holds
 the event and the context variables. In the function just defined,
 there is a check to see if this event exists as well as the
@@ -470,6 +471,7 @@ queryStringParameters property exists, we use those values
 to update the base URL with the parameters. Using
 queryStringParameters, the user can specify the start and
 limit values when querying the CoinLore API.
+  
 Once the function is updated, you can deploy the updates by running
 the push command in your terminal:
   
@@ -477,4 +479,12 @@ the push command in your terminal:
     ~ amplify push
   ```
   
+### Updating the Client App
   
+Now that you have updated the function, let’s update the React app to
+give the user the option to specify the limit and start
+parameters.
+  
+To do so, you’ll need to add fields for user input and give the user a
+button to trigger a new API request.
+Update src/App.js with the following changes:
