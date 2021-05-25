@@ -329,5 +329,10 @@ created /coins, so the path would be /coins.
 This is an optional object containing any properties you’d like to
 pass to the API, including headers, query string parameters, or a
 body.
-  
 
+  
+In our example, the API call is going to look like this:
+
+```javascript
+  API.get('cryptoapi', '/coins');
+```
