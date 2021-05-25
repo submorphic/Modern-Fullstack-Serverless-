@@ -336,3 +336,19 @@ In our example, the API call is going to look like this:
 ```javascript
   API.get('cryptoapi', '/coins');
 ```
+
+  The API returns a promise, meaning you can handle the call using
+either a promise or an async function:
+ 
+  ```javascript
+// promise
+API.get('cryptoapi', '/coins')
+.then(data => console.log(data))
+.catch(error => console.log(error))
+
+// async await
+const data = await API.get('cryptoapi', '/coins')
+```
+  
+In the examples in this book, we’ll be handling promises using
+async functions.
