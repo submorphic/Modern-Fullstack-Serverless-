@@ -280,3 +280,23 @@ the project. The Operation property will be set to Create,
 Update, Delete, or No Change.
 
   
+## Interacting with the New API
+Now that the resources have been deployed, you can begin interacting
+with the API from the React application.
+  
+### Configuring the Client App to Work with Amplify
+  
+To use the Amplify client library in any application, there is a base
+configuration that needs to be set up, usually at the root level. When
+you create the resources, the CLI populates the aws-exports.js file
+with information about your resources. You will use this file to
+configure the client application to work with Amplify.
+To configure the app, open src/index.js and add the following below
+the last import:
+
+```javascript 
+    import Amplify from 'aws-amplify'
+    import config from './aws-exports'
+    Amplify.configure(config); 
+ ```
+  
