@@ -411,3 +411,15 @@ To get started, you will first need a way to interact with an HTTP
 endpoint in the Lambda function. The library you will be using forthis lesson is the Axios library. Axios is a promise-based HTTP client
 for the browser and Node.js
   
+
+ ### Installing Axios
+The first thing you need to do is install the Axios package in your
+function folder in order to send HTTP requests from the function.
+Navigate to amplify/backend/function/cryptofunction/src, install
+Axios, and then navigate back to the root of the app:
+  
+  ```javascript 
+~ cd amplify/backend/function/cryptofunction/src
+~ npm install axios
+~ cd ../../../../../
+  ``` 
