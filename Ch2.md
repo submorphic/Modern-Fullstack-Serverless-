@@ -252,3 +252,12 @@ the Amplify push command:
 ? Are you sure you want to continue? Y
 ```
   
+Once the deployment has successfully completed, the services are
+live and ready to use.
+  
+You can use the Amplify CLI status command at any time to see
+the current status of your project. The status command will list out
+all of the currently configured services in your project and give you
+the status for each of them:
+  
+  
