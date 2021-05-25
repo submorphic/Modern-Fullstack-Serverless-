@@ -300,3 +300,34 @@ the last import:
     Amplify.configure(config); 
  ```
   
+### The Amplify Client API Category
+After the client application has been configured, you can begin
+interacting with your resources.
+  
+The Amplify client library has various API categories that can be
+imported and used for various types of functionality, including Auth
+for authentication, Storage for storing items in S3, and API for
+interacting with REST and GraphQL APIs.
+  
+In this section, you will be working with the API category. API has
+various methods available—including API.get, API.post,
+API.put, and API.del—for interacting with REST APIs, and
+API.graphql for interacting with GraphQL APIs.
+  
+When working with a REST API, API takes in three arguments:
+API.get(apiName: String, path: String, data?: Object)
+
+#### apiName
+The name given when you create the API from the command line.
+In our example, this value would be cryptoapi.
+
+#### path
+The path that you would like to interact with. In our example, we
+created /coins, so the path would be /coins.
+
+#### data
+This is an optional object containing any properties you’d like to
+pass to the API, including headers, query string parameters, or a
+body.
+  
+
