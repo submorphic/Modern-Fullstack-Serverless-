@@ -352,3 +352,50 @@ const data = await API.get('cryptoapi', '/coins')
   
 In the examples in this book, we’ll be handling promises using
 async functions.
+
+  
+### Calling the API and Rendering the Data in React
+Next, let’s call the API and render the data. Update src/App.js with
+the following:
+  
+```javascript 
+ 
+  // Import useState and useEffect hooks from React
+import React, { useState, useEffect } from 'react'
+// Import the API category from AWS Amplify
+import { API } from 'aws-amplify'
+import './App.css';
+function App() {
+// Create coins variable and set to empty array
+const [coins, updateCoins] = useState([])
+// Define function to all API
+async function fetchCoins() {
+const data = await API.get('cryptoapi', '/coins')
+updateCoins(data.coins)
+}
+ 
+  // Call fetchCoins function when component loads
+useEffect(() => {
+fetchCoins()
+}, [])
+return (
+<div className="App">
+{
+coins.map((coin, index) => (
+<div key={index}>
+<h2>{coin.name} - {coin.symbol}</h2>
+<h5>${coin.price_usd}</h5>
+</div>
+))
+}
+</div>
+);
+}
+export default App; 
+```
+
+Then, run the app: 
+  
+```javascript
+  ~ npm start 
+```
