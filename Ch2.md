@@ -222,3 +222,20 @@ well as the Amplify client library.
 To create the API, you can use the Amplify add command. From the
 root of the project, run the following command in your terminal:
 
+```javascript 
+  
+  ~ amplify add api
+? Please select from one of the below mentioned services:
+REST? Provide a friendly name for your resource to be used as a
+label for
+this category in the project: cryptoapi
+? Provide a path: /coins
+? Choose a Lambda source: Use a Lambda function already
+added in the
+current Amplify project
+? Choose the Lambda function to invoke by this path:
+cryptofunction
+? Restrict API access: N
+? Do you want to add another path? N
+  
+```
