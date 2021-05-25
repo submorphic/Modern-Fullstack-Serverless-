@@ -399,3 +399,15 @@ Then, run the app:
 ```javascript
   ~ npm start 
 ```
+
+  
+## Updating the Function to Call Another API
+  
+Next, you’ll update the function to call another API, the CoinLore
+API, that will return dynamic data from the CoinLore service. The
+user will be able to add set filters like limit and start to limit the
+number of items coming back from the API.
+To get started, you will first need a way to interact with an HTTP
+endpoint in the Lambda function. The library you will be using forthis lesson is the Axios library. Axios is a promise-based HTTP client
+for the browser and Node.js
+  
