@@ -432,26 +432,49 @@ following:
   
   ```javascript 
    // Import axios
-const axios = require('axios')
-app.get('/coins', function(req, res) {
-// Define base url
-let apiUrl = `https://api.coinlore.com/api/tickers?
-start=0&limit=10`
-// Check if there are any query string parameters
-// If so, reset the base url to include them
-if (req.apiGateway &&
-req.apiGateway.event.queryStringParameters) {
-const { start = 0, limit = 10 } =
-req.apiGateway.event.queryStringParameters
-apiUrl = `https://api.coinlore.com/api/tickers/?
-start=${start}&limit=${limit}`
-}
-// Call API and return responseaxios.get(apiUrl)
-.then(response => {
-res.json({ coins: response.data.data })
-})
-.catch(err => res.json({ error: err }))
-})
+  
+    const axios = require('axios')
+    app.get('/coins', function(req, res) {
+    // Define base url
+    let apiUrl = `https://api.coinlore.com/api/tickers?
+    start=0&limit=10`
+    
+    // Check if there are any query string parameters
+    // If so, reset the base url to include them
+  
+    if (req.apiGateway &&
+    req.apiGateway.event.queryStringParameters) {
+    const { start = 0, limit = 10 } =
+    req.apiGateway.event.queryStringParameters
+    apiUrl = `https://api.coinlore.com/api/tickers/?
+    start=${start}&limit=${limit}`
+    }
+    
+    // Call API and return responseaxios.get(apiUrl)
+    .then(response => {
+    res.json({ coins: response.data.data })
+    })
+    .catch(err => res.json({ error: err }))
+    })
 ``` 
+  
+In the preceding function, we’ve imported the Axios library and then
+used it to make an API call to the CoinLore API. In the API call, you
+can pass in a start and limit parameter to the request to define
+the number of coins to return, as well as to define the starting point.
+In the req parameter, there is an apiGateway property that holds
+the event and the context variables. In the function just defined,
+there is a check to see if this event exists as well as the
+queryStringParameters property on the event. If the
+queryStringParameters property exists, we use those values
+to update the base URL with the parameters. Using
+queryStringParameters, the user can specify the start and
+limit values when querying the CoinLore API.
+Once the function is updated, you can deploy the updates by running
+the push command in your terminal:
+  
+  ```javascript 
+    ~ amplify push
+  ```
   
   
