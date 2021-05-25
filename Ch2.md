@@ -260,4 +260,17 @@ the current status of your project. The status command will list out
 all of the currently configured services in your project and give you
 the status for each of them:
   
+```javascript 
+  ~ amplify status
+  Current Environment: local
+  | Category | Resource name | Operation | Provider plugin
+  |
+  | -------- | -------------- | --------- | -----------------
+  |
+  | Function | cryptofunction | No Change | awscloudformation|
+  | Api
+  |
+  | cryptoapi
+  | No Change | awscloudformation  
+```
   
