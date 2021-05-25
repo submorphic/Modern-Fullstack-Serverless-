@@ -274,3 +274,9 @@ the status for each of them:
   | No Change | awscloudformation  
 ```
   
+The main thing to notice in this status output is the Operation. The
+Operation tells you what will happen the next time push is run in
+the project. The Operation property will be set to Create,
+Update, Delete, or No Change.
+
+  
