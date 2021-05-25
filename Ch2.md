@@ -239,3 +239,16 @@ cryptofunction
 ? Do you want to add another path? N
   
 ```
+
+### Deploying the API and the Lambda Function
+  
+Now that the function and API have both been created, you need to
+deploy them to your account to make them live. To do so, you can run
+the Amplify push command:
+  
+
+```javascript 
+~ amplify push
+? Are you sure you want to continue? Y
+```
+  
