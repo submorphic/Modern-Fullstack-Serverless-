@@ -206,5 +206,19 @@ app.get('/coins', function(req, res) {
   res.json({coins}); 
 });  
 ```
+ 
+## Adding the API
+
+Now that the function is created and configured, let’s put an API in
+front of it so you can trigger it with an HTTP request.
+To do this, you will be using Amazon API Gateway. API Gateway is
+a fully managed service that enables developers to create, publish,
+maintain, monitor, and secure REST and WebSocket APIs. API
+Gateway is one of the services supported by both the Amplify CLI as
+well as the Amplify client library.
 
   
+### Creating a New API
+To create the API, you can use the Amplify add command. From the
+root of the project, run the following command in your terminal:
+
