@@ -103,7 +103,27 @@ the GraphQL operation response. Here’s an example of a typical
 GraphQL query fetching an array of items:
 
 ```javascript 
-
+  query {
+   listTodos {
+     id
+     name
+     completed
+    }
+   }
 
 ```
 
+
+This request would return the following response:
+
+```javascript 
+{
+"data": {
+"listTodos": [
+{ "id": "0", "name": "buy groceries", "completed":
+false },
+{ "id": "1", "name": "exercise", "completed": true }
+]
+}
+}
+```
