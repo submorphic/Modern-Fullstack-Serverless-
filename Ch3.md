@@ -241,3 +241,14 @@ The @model directive we used in this schema will transform the
 base Note type into an expanded AWS AppSync GraphQL API
 complete with:
 
+1. Additional schema definitions for queries and mutations
+(Create, Read, Update, Delete, and List operations)
+2. Additional schema definitions for GraphQL subscriptions
+3. DynamoDB database
+4. Resolver code for all GraphQL operations mapped to
+DynamoDB database
+To deploy the API, you can run the push command:
+
+```javascript
+ ~ amplify push
+```
