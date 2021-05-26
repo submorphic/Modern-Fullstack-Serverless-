@@ -319,3 +319,19 @@ query getNote {
   }
 }
 ```
+
+
+### Building the React Application
+
+The first thing you will need to do is configure the React application
+to recognize the Amplify resources located at src/aws-exports.js. To
+do so, open src/index.js and add the following below the last import:
+
+```javascript
+
+import Amplify from 'aws-amplify'
+import config from './aws-exports'
+Amplify.configure(config)
+
+```
+
