@@ -73,3 +73,9 @@ Here is an example of a GraphQL schema:
 
 ```
 
+Once the schema has been created, you can begin writing resolvers
+for the GraphQL operations defined in the schema (query, mutation,
+subscription). GraphQL resolvers tell the GraphQL operations what
+to do when being executed and will typically interact with some data
+source or another API
+
