@@ -252,3 +252,37 @@ To deploy the API, you can run the push command:
 ```javascript
  ~ amplify push
 ```
+
+Once the deployment has completed, the API and database have
+successfully been created in your account. Next, let’s open the newly
+created AppSync API in the AWS Console and test out a few
+GraphQL operations.
+
+
+Viewing and Interacting with the
+GraphQL API
+To open the API in the AWS Console at any time, you can use the
+following command:
+
+```javascript
+- amplify console api
+> Choose GraphQL
+```
+
+Once you’ve opened the AppSync console, click Queries in the
+lefthand menu to open the query editor. Here, you can test out
+GraphQL queries, mutations, and subscriptions using your API.
+The first operation we’ll try out is a mutation to create a new note. In
+the query editor, execute the following mutation: 
+
+```javascript
+mutation createNote {
+  createNote(input: {
+     name: "Book flight"
+     description: "Flying to Paris on June 1 returning June
+     10"completed: false
+     }) {
+     id name description completed
+  }
+}
+```
