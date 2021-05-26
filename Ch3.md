@@ -226,3 +226,8 @@ This schema has a main Note type containing five fields. A field can
 be either nullable (not required) or non-nullable (required). A non-
 nullable field is specified with a ! character.
 
+
+The Note type in this schema is annotated with an @model
+directive. This directive is not part of the GraphQL SDL; instead, it is
+part of the AWS Amplify GraphQL Transform library.
+
