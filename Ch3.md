@@ -36,7 +36,40 @@ the over-fetching of data, and preventing type errors.
 A GraphQL API consists of three main parts: schema, resolvers, and
 data sources
 
+
 ![10](https://user-images.githubusercontent.com/23625821/119619757-98f0da00-be04-11eb-9ab8-4d2d99824a13.png)
 
 
+The schema, written in GraphQL Schema Definition Language
+(SDL), defines the data model (types) and operations that can beexecuted against the API. The schema consists of base types (data
+models) and GraphQL operations like queries for fetching data;
+mutations for creating, updating, and deleting data; and subscriptions
+for subscribing to changes in data in real time.
+Here is an example of a GraphQL schema:
+
+```javascript 
+ # base type
+  type Todo {
+  id: ID
+  name: String
+  completed: Boolean
+  }
+  
+  # Query definitions
+  type Query {
+  getTodo(id: ID): Todo
+  listTodos: [Todo]
+  }
+  
+  # Mutation definitions
+  type Mutation {
+  createTodo(input: Todo): Todo
+  }
+  
+  # Subscription definitions
+  type Subscription {
+  onCreateTodo: Todo
+  }
+
+```
 
