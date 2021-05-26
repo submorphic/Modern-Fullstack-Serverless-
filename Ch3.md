@@ -221,3 +221,8 @@ type Note @model {
 }
 
 ```
+
+This schema has a main Note type containing five fields. A field can
+be either nullable (not required) or non-nullable (required). A non-
+nullable field is specified with a ! character.
+
