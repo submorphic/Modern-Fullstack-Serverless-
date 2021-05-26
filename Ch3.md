@@ -84,3 +84,26 @@ source or another API
 
 
 
+### GraphQL Operations
+GraphQL operations are how you interact with the API data sources.
+GraphQL operations can be similarly mapped to HTTP methods for
+RESTful APIs:
+
+```javascript 
+  GET -> Query
+  PUT -> Mutation
+  POST -> Mutation
+  DELETE -> Mutation
+  PATCH -> Mutation
+```
+
+A GraphQL request operation looks similar to a JavaScript object
+with only the keys and no values. The keys and values are returned in
+the GraphQL operation response. Here’s an example of a typical
+GraphQL query fetching an array of items:
+
+```javascript 
+
+
+```
+
