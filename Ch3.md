@@ -19,4 +19,15 @@ of, and how GraphQL works.
 
 ### What Is GraphQL?
 
+GraphQL is an API specification. It is a query language for APIs and
+a runtime for fulfilling those queries with your data. It is, and can be
+used as, a replacement for REST and has some similarities to REST.
+GraphQL was introduced by Facebook in 2015, though it had been
+used internally since 2012. GraphQL allows clients to define the
+structure of the data that is required from an API call so that they can
+know exactly what data structure is going to be returned from the
+server. Requesting data in this way enables a much more efficient
+way for client-side applications to interact with backend APIs and
+services, reducing the amount of under-fetching of data, preventing
+the over-fetching of data, and preventing type errors.
 
