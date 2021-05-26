@@ -304,3 +304,18 @@ query listNotes {
 }
 
 ``` 
+
+You can also try querying for a single note using the ID of one of the
+notes:
+
+```javascript
+
+query getNote {
+  getNote(id: "<NOTE_ID>") {
+     id
+     name
+     description
+     completed
+  }
+}
+```
