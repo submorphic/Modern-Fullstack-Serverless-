@@ -335,3 +335,9 @@ Amplify.configure(config)
 
 ```
 
+#### Listing Notes (GraphQL Query)
+
+Now that the application has been configured, you can begin making
+calls against the GraphQL API. The first operation we will be
+implementing will be a query to list all of the notes.
+
