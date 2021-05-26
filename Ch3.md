@@ -286,3 +286,21 @@ mutation createNote {
   }
 }
 ```
+
+Now that you’ve created an item, you can try querying for it. Let’s try
+to query for all of the notes in the app:
+
+```javascript
+
+query listNotes {
+    listNotes {
+       items {
+         id
+         name
+         description
+         completed
+    }
+   }
+}
+
+``` 
