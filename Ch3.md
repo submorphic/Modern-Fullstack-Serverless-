@@ -31,3 +31,8 @@ way for client-side applications to interact with backend APIs and
 services, reducing the amount of under-fetching of data, preventing
 the over-fetching of data, and preventing type errors.
 
+
+### What Makes Up a GraphQL API?
+A GraphQL API consists of three main parts: schema, resolvers, and
+data sources
+
