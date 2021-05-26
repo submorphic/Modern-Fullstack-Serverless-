@@ -79,3 +79,8 @@ subscription). GraphQL resolvers tell the GraphQL operations what
 to do when being executed and will typically interact with some data
 source or another API
 
+
+ ![1](https://user-images.githubusercontent.com/23625821/119620472-4fed5580-be05-11eb-9984-370d5d21996d.png)
+
+
+
