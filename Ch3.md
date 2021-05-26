@@ -131,7 +131,7 @@ You can also pass arguments into a GraphQL operation. The
 following operation is a query for a Todo, passing in the ID of the
 Todo we’d like to fetch:
 
-``javascript
+```javascript
 query {
    getTodo(id: "0") {
      name
@@ -140,7 +140,8 @@ query {
 }
 ```
 
-This request would return the following response:
+This request would return the following response 
+
 ```javascript 
 {
 "data": {
