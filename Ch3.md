@@ -157,3 +157,29 @@ Though there are many ways to implement a GraphQL server, in this
 part we will be using AWS AppSync. AppSync is a managed service
 that allows us to deploy a GraphQL API, resolvers, and data sources
 quickly and easily using the Amplify CLI.
+
+
+## Creating the GraphQL API
+
+Now that you have a basic understanding of what GraphQL is, let’s
+go ahead and start using it to build the Notes app.
+
+The first thing you need to do is create a new React application and
+install the necessary dependencies. This app will be using the AWS
+Amplify library to interact with the API, uuid for creating unique
+ids, and the Ant Design library for styling:
+
+```javascript
+~ npx create-react-app notesapp
+~ cd notesapp
+~ npm install aws-amplify antd uuid
+```
+
+Now, within the root of the new app, you can create the Amplify
+project:
+
+```javascript 
+~ amplify init
+```
+
+
