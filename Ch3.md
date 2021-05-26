@@ -120,10 +120,9 @@ This request would return the following response:
 {
 "data": {
 "listTodos": [
-{ "id": "0", "name": "buy groceries", "completed":
-false },
-{ "id": "1", "name": "exercise", "completed": true }
-]
-}
+   { "id": "0", "name": "buy groceries", "completed": false },
+   { "id": "1", "name": "exercise", "completed": true }
+  ]
+ }
 }
 ```
