@@ -152,3 +152,8 @@ This request would return the following response
  }
 }
 ```
+
+Though there are many ways to implement a GraphQL server, in this
+part we will be using AWS AppSync. AppSync is a managed service
+that allows us to deploy a GraphQL API, resolvers, and data sources
+quickly and easily using the Amplify CLI.
