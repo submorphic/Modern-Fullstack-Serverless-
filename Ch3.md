@@ -231,3 +231,8 @@ The Note type in this schema is annotated with an @model
 directive. This directive is not part of the GraphQL SDL; instead, it is
 part of the AWS Amplify GraphQL Transform library.
 
+
+The GraphQL Transform library allows you to annotate a GraphQL
+schema with different directives like @model, @connection,
+@auth, and others.
+
