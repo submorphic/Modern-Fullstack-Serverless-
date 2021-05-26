@@ -341,3 +341,20 @@ Now that the application has been configured, you can begin making
 calls against the GraphQL API. The first operation we will be
 implementing will be a query to list all of the notes.
 
+
+The query will return an array and we will map over all of the items
+in the array, showing the note name, description, and whether or not it
+is completed.
+
+In src/App.js, first import the following at the top of the file:
+
+```javascript 
+
+import React, {useEffect, useReducer} from 'react'
+import { API } from 'aws-amplify'
+import { List } from 'antd'
+import 'antd/dist/antd.css'
+import { listNotes } from './graphql/queries'
+
+```
+
