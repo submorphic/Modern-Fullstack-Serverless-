@@ -236,3 +236,8 @@ The GraphQL Transform library allows you to annotate a GraphQL
 schema with different directives like @model, @connection,
 @auth, and others.
 
+
+The @model directive we used in this schema will transform the
+base Note type into an expanded AWS AppSync GraphQL API
+complete with:
+
