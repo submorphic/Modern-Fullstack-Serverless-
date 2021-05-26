@@ -36,3 +36,7 @@ the over-fetching of data, and preventing type errors.
 A GraphQL API consists of three main parts: schema, resolvers, and
 data sources
 
+![10](https://user-images.githubusercontent.com/23625821/119619757-98f0da00-be04-11eb-9ab8-4d2d99824a13.png)
+
+
+
