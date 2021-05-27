@@ -371,3 +371,36 @@ useReducer has the following API:
 
 useReducer accepts a reducer function of type (state, action) => newState and initialState as arguments:
 
+```javascript 
+
+/* Example of some basic state */
+
+  const initialState = { notes: [] }
+
+  /* Example of a basic reducer */
+
+  function reducer(state, action) {
+     switch(action.type) {
+     case 'SET_NOTES':
+     return { ...state, notes: action.notes }
+     default:
+     return state
+     }
+  }
+
+  /* Implementing useReducer */
+
+  const [state, dispatch] = useReducer(reducer: <function>, initialState: <any>);
+  
+  /* Sending an update to the reducer */
+  
+  const notes = [{ name: 'Hello World' }]
+  
+  dispatch({ type: 'SET_NOTES', notes: notes })
+  
+  /* Using the state in your app */
+  
+  {
+    state.notes.map(note => <p>{note.name}</p>)
+  }
+```
