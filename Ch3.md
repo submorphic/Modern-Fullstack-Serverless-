@@ -563,3 +563,18 @@ Next, you will need to import the createNote mutation definition:
 ```javascript 
 import { createNote } from './graphql/mutations'
 ```
+
+Then, create a new CLIENT_ID variable below the last import:
+
+```javascript 
+const CLIENT_ID = uuid()
+```
+
+Update the switch statement in the reducer to add three new cases.
+We will need a new case for the following three actions:
+
+1. Adding a new note to the local state
+2. Resetting the form state to clear out the form
+3. Updating the form state when the user types
+
+
