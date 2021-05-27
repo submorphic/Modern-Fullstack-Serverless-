@@ -482,3 +482,38 @@ useEffect(() => {
 }, [])
 
 ```
+
+The next thing you need to do is return the main UI for the
+component. In the main App function, add the following:
+
+```javascript
+   return (
+      <div style={styles.container}>
+      <List
+      loading={state.loading}
+      dataSource={state.notes}
+      renderItem={renderItem}
+      />
+      </div>
+   )
+
+```
+
+Here we are using the List component from Ant Design. This
+component will map over an array (dataSource) and return an
+item for each item in the array by calling the renderItem function.
+
+Next, define renderItem (in the main App function):
+
+```javascipt
+function renderItem(item) {
+ return (
+   <List.Item style={styles.item}>
+   <List.Item.Meta
+   title={item.name}
+   description={item.description}
+   />
+   </List.Item>
+ )
+}
+```
