@@ -358,3 +358,14 @@ import { listNotes } from './graphql/queries'
 
 ```
 
+Next, we will need to create a variable to hold our initial application
+state. Because our application will be holding and working with
+multiple state variables, we will use the useReducer hook from
+React to manage state.
+useReducer has the following API:
+
+```javascript 
+const [state, dispatch] = useReducer(reducer <function>,
+initialState <any>)
+```
+
