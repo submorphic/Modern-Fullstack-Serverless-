@@ -455,3 +455,30 @@ variables by calling useReducer and passing in the reducer and initialState:
  }
 ```
 
+To fetch the notes, create a fetchNotes function (in the main App function) that will call the AppSync API and set the notes array once the API call is successful:
+
+```javascript 
+async function fetchNotes() {
+   try {
+     const notesData = await API.graphql({
+     query: listNotes
+   })
+   
+   dispatch({ type: 'SET_NOTES', notes: notesData.data.listNotes.items }); 
+   
+   } catch (err) {
+     console.log('error: ', err)
+     dispatch({ type: 'ERROR' })
+   }
+}
+```
+
+Now, invoke the fetchNotes function by implementing the
+useEffect hook (in the main App function):
+
+```javascript 
+useEffect(() => {
+  fetchNotes()
+}, [])
+
+```
