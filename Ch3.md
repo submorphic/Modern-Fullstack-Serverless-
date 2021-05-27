@@ -545,3 +545,15 @@ at how to create a new note. To do so, you’ll need the following:
 2. A function to update the state as the user types into the form
 3. A function to add the new note to the UI and send an API call to create a new note
 
+
+First, import the UUID library so you can create a unique identifier for the client.
+
+We do this now so that later on when we implement subscriptions we can identify the client that created the note.
+
+We will also import the Input and Button components from Ant Design:
+
+```javascript
+import { v4 as uuid } from 'uuid'
+import { List, Input, Button } from 'antd'
+```
+
