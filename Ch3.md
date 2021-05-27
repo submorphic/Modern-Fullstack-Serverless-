@@ -587,3 +587,27 @@ We will need a new case for the following three actions:
    return { ...state, form: { ...state.form, [action.name] : action.value } }
 ```
 
+Next, create the createNote function in the main App 
+
+```javascript
+function:async function createNote() {
+   const { form } = state
+   if (!form.name || !form.description) {
+      return alert('please enter a name and description')
+   }
+   const note = { ...form, clientId: CLIENT_ID, completed: false, id: uuid() }
+   
+   dispatch({ type: 'ADD_NOTE', note })
+   dispatch({ type: 'RESET_FORM' })
+   
+   try {
+     await API.graphql({
+       query: CreateNote,
+       variables: { input: note }
+     })
+     console.log('successfully created note!')
+   } catch (err) {
+     console.log("error: ", err)
+   }
+}
+```
