@@ -427,4 +427,21 @@ In src/App.js, add the following initialState object after the last import:
    form: { name: '', description: '' }
  }
 ```
-s
+
+Then create the reducer. For now, the reducer will only have cases to
+either set the notes array or set an error state:
+
+
+```javascript 
+function reducer(state, action) {
+   switch(action.type) {
+   case 'SET_NOTES':
+   return { ...state, notes: action.notes, loading: false
+   }
+   case 'ERROR':
+   return { ...state, loading: false, error: true }
+   default:
+   return state
+   }
+}
+```
