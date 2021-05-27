@@ -577,4 +577,13 @@ We will need a new case for the following three actions:
 2. Resetting the form state to clear out the form
 3. Updating the form state when the user types
 
+```javascript 
+
+ case 'ADD_NOTE':
+   return { ...state, notes: [action.note, ...state.notes]}
+ case 'RESET_FORM':
+   return { ...state, form: initialState.form }
+ case 'SET_INPUT':
+   return { ...state, form: { ...state.form, [action.name] : action.value } }
+```
 
