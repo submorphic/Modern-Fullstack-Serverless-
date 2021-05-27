@@ -445,3 +445,13 @@ function reducer(state, action) {
    }
 }
 ```
+
+Next, update the main App function to create the state and dispatch
+variables by calling useReducer and passing in the reducer and initialState:
+
+```javascript 
+ export default function App() {
+    const [state, dispatch] = useReducer(reducer, initialState); 
+ }
+```
+
