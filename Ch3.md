@@ -632,24 +632,28 @@ Before the List component, add the following two inputs and button:
 
 
 ```javascript 
-<Input
-onChange={onChange}
-value={state.form.name}
-placeholder="Note Name"
-name='name'
-style={styles.input}
-/>
-<Input
-onChange={onChange}
-value={state.form.description}
-placeholder="Note description"
-name='description'
-style={styles.input}
-/>
-<Button
-onClick={createNote}
-type="primary"
->Create Note</Button>
 
+<Input
+ onChange={onChange}
+ value={state.form.name}
+ placeholder="Note Name"
+ name='name'
+ style={styles.input}
+/>
+
+<Input
+ onChange={onChange}
+ value={state.form.description}
+ placeholder="Note description"
+ name='description'
+ style={styles.input}
+/>
+
+<Button
+ onClick={createNote}
+ type="primary"
+>
+ Create Note
+</Button>
 
 ``` 
