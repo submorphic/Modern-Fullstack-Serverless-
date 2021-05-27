@@ -557,3 +557,9 @@ import { v4 as uuid } from 'uuid'
 import { List, Input, Button } from 'antd'
 ```
 
+
+Next, you will need to import the createNote mutation definition:
+
+```javascript 
+import { createNote as CreateNote } from './graphql/mutations'
+```
