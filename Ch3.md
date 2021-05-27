@@ -369,3 +369,5 @@ useReducer has the following API:
 
 ```
 
+useReducer accepts a reducer function of type (state, action) => newState and initialState as arguments:
+
