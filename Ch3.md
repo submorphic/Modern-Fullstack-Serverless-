@@ -535,3 +535,13 @@ Now we are ready to run the app! In the terminal, run the start command:
 ~ npm start
 
 ```
+
+### Creating Notes (GraphQL Mutation)
+
+Now that you know how to query for a list of notes, let’s take a look
+at how to create a new note. To do so, you’ll need the following:
+
+1. A form to create a new note
+2. A function to update the state as the user types into the form
+3. A function to add the new note to the UI and send an API call to create a new note
+
