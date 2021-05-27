@@ -517,3 +517,21 @@ function renderItem(item) {
  )
 }
 ```
+
+Finally, create the styles for the components we will be using for this app:
+
+```javascript 
+   const styles = {
+      container: {padding: 20},
+      input: {marginBottom: 10},
+      item: { textAlign: 'left' },
+      p: { color: '#1890ff' }
+   }
+
+```
+Now we are ready to run the app! In the terminal, run the start command:
+
+``` javascript
+~ npm start
+
+```
