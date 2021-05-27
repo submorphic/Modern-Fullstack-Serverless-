@@ -376,7 +376,7 @@ useReducer accepts a reducer function of type (state, action) => newState and in
 /* Example of some basic state */
 
   const initialState = { notes: [] }
-
+  
   /* Example of a basic reducer */
 
   function reducer(state, action) {
@@ -404,3 +404,14 @@ useReducer accepts a reducer function of type (state, action) => newState and in
     state.notes.map(note => <p>{note.name}</p>)
   }
 ```
+
+When invoked, the useReducer hook returns an array containing
+two items:
+
+1. The application state
+A dispatch function (this function allows you to update
+the application state)
+
+2. The initial state of our Notes application will hold an array for the
+notes, form values, error, and loading state.
+
