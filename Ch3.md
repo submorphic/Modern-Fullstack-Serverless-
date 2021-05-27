@@ -365,7 +365,7 @@ React to manage state.
 useReducer has the following API:
 
 ```javascript 
-const [state, dispatch] = useReducer(reducer <function>,
-initialState <any>)
+  const [state, dispatch] = useReducer(reducer <function>, initialState <any>); 
+
 ```
 
