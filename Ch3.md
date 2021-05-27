@@ -415,3 +415,16 @@ the application state)
 2. The initial state of our Notes application will hold an array for the
 notes, form values, error, and loading state.
 
+
+In src/App.js, add the following initialState object after the last import:
+
+
+```javascript 
+ const initialState = {
+   notes: [],
+   loading: true,
+   error: false,
+   form: { name: '', description: '' }
+ }
+```
+s
