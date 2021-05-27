@@ -611,3 +611,45 @@ function:async function createNote() {
    }
 }
 ```
+
+In this function, we are updating the local state before the API call is successful. This is known as an optimistic response.
+
+It is done because we want the UI to be fast and to update as soon as the user
+adds a new note.
+
+If the API call fails, you can then implement some functionality in the catch block to notify the user of the error if you would like.
+
+Now, create an onChange handler in the main App function to update the form state when the user interacts with an input:
+
+```javascript
+ function onChange(e) {
+   dispatch({ type: 'SET_INPUT', name: e.target.name, value: e.target.value })
+ } 
+```
+Finally, we will update the UI to add the form components.
+
+Before the List component, add the following two inputs and button:
+
+
+```javascript 
+<Input
+onChange={onChange}
+value={state.form.name}
+placeholder="Note Name"
+name='name'
+style={styles.input}
+/>
+<Input
+onChange={onChange}
+value={state.form.description}
+placeholder="Note description"
+name='description'
+style={styles.input}
+/>
+<Button
+onClick={createNote}
+type="primary"
+>Create Note</Button>
+
+
+``` 
