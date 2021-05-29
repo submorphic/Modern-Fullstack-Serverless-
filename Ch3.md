@@ -657,3 +657,14 @@ Before the List component, add the following two inputs and button:
 </Button>
 
 ``` 
+
+#### Deleting Notes (GraphQL Mutation)
+
+Next, let’s take a look at how to delete a note. To do so, we’ll need
+the following:
+
+1. A deleteNote function to delete the note both from the
+UI and from the GraphQL API
+
+2. A button in each note to invoke the deleteNote function
+
