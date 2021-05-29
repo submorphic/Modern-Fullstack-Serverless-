@@ -744,3 +744,31 @@ import {
 } from './graphql/mutations';
 
 ```
+
+Next, create an updateNote function in the main App function:
+
+```javascript 
+
+async function updateNote(note) {
+   const index = state.notes.findIndex(n => n.id === note.id)
+   const notes = [...state.notes]
+   notes[index].completed = !note.completed
+   dispatch({ type: 'SET_NOTES', notes})
+   try {
+     await API.graphql({
+       query: UpdateNote,
+       variables: { input: { id: note.id, completed: notes[index].completed } }
+     })
+     console.log('note successfully updated!')
+   } catch (err) {
+     console.log('error: ', err)
+   }
+}
+
+```
+
+In this function, we are first finding the index of the selected note,
+then creating a copy of the notes array. We then update the completed
+value of the selected note to be the opposite of what it currently is.
+We then update the notes array with the new version of the note, setthe notes array in the local state, and call the GraphQL API, passing
+in the note that needs to be updated in the API.
