@@ -712,16 +712,16 @@ deleteNote function, passing in the item:
 
 ```jsx
 <List.Item
-style={styles.item}
-actions={[
-<p style={styles.p} onClick={() =>
-deleteNote(item)}>Delete</p>
-]}
->
-<List.Item.Meta
-title={item.name}
-description={item.description}
-/>
+ style={styles.item}
+ actions={[
+  <p style={styles.p} onClick={() =>
+     deleteNote(item)}>Delete</p>
+   ]}
+  >
+ <List.Item.Meta
+   title={item.name}
+   description={item.description}
+ />
 </List.Item>
 
 ```
