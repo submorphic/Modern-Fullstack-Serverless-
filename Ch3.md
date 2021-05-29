@@ -792,3 +792,31 @@ depending on the value of the completed Boolean of the item
 ]}
 
 ```
+
+### Real-Time Data (GraphQL Subscriptions)
+
+The last piece of functionality we will implement is the ability to
+subscribe to updates in real time. The update that we’d like to
+subscribe to is when a new note has been added. When this happens,
+the functionality we’d like to implement is to have our application
+receive that new note, update the notes array with the new note, and
+render the updated notes array to our screen.
+
+To do this, you will be implementing a GraphQL subscription. With
+GraphQL subscriptions, you can subscribe to different events. These
+events are usually some type of mutation (on create, on update, on
+delete). When one of these events happens, the data from the event
+gets sent to the client that initialized the subscription. It is then up to
+you to handle the data that comes in on the client.
+
+To make this work, you’ll only need to initialize the subscription in
+the useEffect hook and dispatch the ADD_NOTE type along with
+the note data when a subscription is fired.
+
+First, import the onCreateNote subscription:
+
+```javascript 
+ import { onCreateNote } from './graphql/subscriptions'
+```
+
+
