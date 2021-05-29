@@ -820,3 +820,32 @@ First, import the onCreateNote subscription:
 ```
 
 
+Next, update the useEffect hook with the following code:
+
+```javascript 
+useEffect(() => {
+ fetchNotes(); 
+ const subscription = API.graphql({
+  query: onCreateNote})
+ .subscribe({
+   next: noteData => {
+    const note = noteData.value.data.onCreateNote; 
+     
+    if (CLIENT_ID === note.clientId) return; 
+     
+    dispatch({ type: 'ADD_NOTE', note }); 
+   }
+  })
+  return () => subscription.unsubscribe()
+}, [])
+
+```
+
+In this subscription, we are subscribing to the onCreateNote
+event. When a new note is created, this event gets triggered and the
+next function is invoked, passing in the note data as the parameter.
+We take the note data and check to see if our client is the application
+that created the note. If our client created the note, we return without
+going any further. If we are not the client that created the note, we
+dispatch the ADD_NOTE action, passing in the note data from the
+subscription.
