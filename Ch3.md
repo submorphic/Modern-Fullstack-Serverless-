@@ -725,3 +725,22 @@ deleteNote function, passing in the item:
 </List.Item>
 
 ```
+
+The next piece of functionality we want to add is the ability to update
+a note to be completed. To do so, you’ll need the following:
+
+1. An updateNote function to update the note in the UI and
+in the GraphQL API
+2. A button in each note to invoke the updateNote function
+
+First, import the updateNote mutation:
+
+```javascript 
+
+import {
+  updateNote,
+  createNote, 
+  deleteNote
+} from './graphql/mutations';
+
+```
