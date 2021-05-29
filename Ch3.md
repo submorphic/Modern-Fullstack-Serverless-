@@ -772,3 +772,23 @@ then creating a copy of the notes array. We then update the completed
 value of the selected note to be the opposite of what it currently is.
 We then update the notes array with the new version of the note, setthe notes array in the local state, and call the GraphQL API, passing
 in the note that needs to be updated in the API.
+
+
+Finally, update the List.Item component to add an update button
+that will call the updateNote function, passing in the item. This
+component will render either completed or mark complete
+depending on the value of the completed Boolean of the item
+(based on whether completed is true or false):
+
+```jsx
+<List.Item
+ style={styles.item}
+ actions={[
+   <p style={styles.p} onClick={() =>
+     deleteNote(item)}>Delete</p>,
+   <p style={styles.p} onClick={() => updateNote(item)}>
+    {item.completed ? 'completed' : 'mark completed'}
+   </p>
+]}
+
+```
