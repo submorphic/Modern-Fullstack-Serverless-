@@ -701,3 +701,27 @@ async function deleteNote({ id }) {
 
 ```
 
+In this function, we are finding the index of the note and creating a
+new notes array without the deleted note. We then dispatch the
+SET_NOTES action passing in the new notes array to update the local
+state and show an optimistic response. Next, we call the GraphQL
+API to delete the note in the AppSync API.
+Now, update the List.Item component in the renderItem
+function to add a delete button to the actions prop that will call the
+deleteNote function, passing in the item:
+
+```jsx
+<List.Item
+style={styles.item}
+actions={[
+<p style={styles.p} onClick={() =>
+deleteNote(item)}>Delete</p>
+]}
+>
+<List.Item.Meta
+title={item.name}
+description={item.description}
+/>
+</List.Item>
+
+```
