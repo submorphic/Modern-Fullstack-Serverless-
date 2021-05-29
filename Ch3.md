@@ -668,3 +668,15 @@ UI and from the GraphQL API
 
 2. A button in each note to invoke the deleteNote function
 
+First, import the deleteNote mutation:
+
+```javascript
+  import {
+    createNote,
+    deleteNote
+  } from './graphql/mutations'; 
+```
+
+
+Then, create a deleteNote function in the main App function:
+
