@@ -680,3 +680,24 @@ First, import the deleteNote mutation:
 
 Then, create a deleteNote function in the main App function:
 
+
+```javascript 
+async function deleteNote({ id }) {
+   const index = state.notes.findIndex(n => n.id === id)
+   const notes = [
+     ...state.notes.slice(0, index),
+     ...state.notes.slice(index + 1)];
+   dispatch({ type: 'SET_NOTES', notes })
+   try {
+      await API.graphql({
+        query: DeleteNote,
+        variables: { input: { id } }
+      }); 
+      console.log('successfully deleted note!'); 
+   } catch (err) {
+   console.log({ err }); 
+   }
+}
+
+```
+
