@@ -849,3 +849,22 @@ that created the note. If our client created the note, we return without
 going any further. If we are not the client that created the note, we
 dispatch the ADD_NOTE action, passing in the note data from the
 subscription.
+
+
+### Conclusion 
+
+Congratulations, you’ve deployed your first serverless GraphQL
+application!
+
+Here are a few things to keep in mind from this chapter:
+
+1. The useEffect hook is similar to componentDidMount from the React lifecycle methods in that it runs after the component first renders.
+
+2. The useReducer hook allows you to manage application state and is preferable to useState when having morecomplex application logic.
+
+3. GraphQL queries are used for fetching data in a GraphQL API.
+
+5. GraphQL mutations are used for creating, updating, or deleting data in a GraphQL API.
+
+5. You can subscribe to API real-time events in a GraphQL API by using GraphQL subscriptions.
+
