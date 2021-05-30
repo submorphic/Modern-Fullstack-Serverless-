@@ -516,3 +516,9 @@ ReactDOM.render(<Router />, document.getElementById('root'));
 
 ```
 
+
+To test the app, we can now run the start command:
+```javascript 
+  ~ npm start
+```
+
