@@ -82,3 +82,14 @@ Design to give the application some basic styling
 
 
 
+## Creating the React App and Adding Amplify
+
+The first thing you’ll do to get started is create the React application,
+install the necessary dependencies, and create the Amplify project.
+To begin, open your terminal and create a new React application:
+
+```javascript 
+  ~ npx create-react-app basic-authentication
+  ~ cd basic-authentication
+```
+
