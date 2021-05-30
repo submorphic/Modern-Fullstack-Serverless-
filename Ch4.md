@@ -165,3 +165,59 @@ In your app, create the following files in the src directory:
  Public.js
  Router.js
 ```
+
+These files do the following:
+
+##### Container.js
+This file will hold a component you will be using to apply
+reusable styling to the other components.
+
+##### Nav.js
+In this component, you will create a navigation UI.
+
+##### Profile.js
+This component will render profile information about the logged-
+in user. This will also be the component where we add the
+authentication component for signing up and signing in.
+
+##### Protected.js
+This is the component we will be using as an example of how to
+create a protected route. If the user is signed in, they will be able
+to view this route. If they are not signed in, they will be redirected
+to the sign-in form.
+
+##### Public.js
+This is a basic route that will be viewable whether or not the user
+is signed in.
+
+##### Router.js
+This file will hold the router and some logic to determine the
+current route name.
+
+
+### Creating the First Component
+
+To start, let’s create the most simple component we will be using for
+the app—the Container component. This component is what we
+will be using to wrap all of our other components so that we can
+apply some reusable styles between the components:
+
+```jsx
+    /* src/Container.js */
+ 
+    import React from 'react'
+    const Container = ({ children }) => (
+        <div style={styles.container}>
+        { children }
+        </div>
+       )
+    const styles = {
+          container: {
+          margin: '0 auto',
+          padding: '50px 100px'
+     }
+ }
+ 
+export default Container; 
+```
+
