@@ -311,3 +311,41 @@ return (
 export default Nav
 ```
 
+### Protected Component
+
+The Protected component will be the protected, or private, route.
+If the user trying to access this route is signed in, they will be able to
+view this route. If they are not signed in, they will be redirected to the
+profile page to sign up or sign in.
+
+#### Auth 
+
+This AWS Amplify class handles user identity management. You
+can use this class to do everything from signing a user up andsigning them in to resetting their password. In this component we
+will be calling a method,
+Auth.currentAuthenticatedUser, that will check if the
+user is currently signed in and, if so, return data about the signed-
+in user:
+
+```jsx
+/* src/Protected.js */
+import React, { useEffect } from 'react';
+import { Auth } from 'aws-amplify'
+import Container from './Container'
+function Protected(props) {
+useEffect(() => {
+Auth.currentAuthenticatedUser()
+.catch(() => {
+props.history.push('/profile')
+})
+}, [])
+return (
+<Container>
+<h1>Protected route</h1>
+</Container>
+);
+}
+export default Protected
+```
+
+
