@@ -491,3 +491,28 @@ colors we’d like to use:
 --amplify-primary-shade: #1890ff;
 }
 ```
+
+#### Configuring the AppNow the app is built.
+The last thing we need to do is update index.js to import the Router and add the Amplify configuration.
+We also want to import the necessary CSS for the Ant Design library:
+
+```javascript 
+
+/* src/index.js */
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import './index.css';
+import Router from './Router';
+
+import 'antd/dist/antd.css';
+import Amplify from 'aws-amplify'
+import config from './aws-exports'
+
+Amplify.configure(config); 
+
+ReactDOM.render(<Router />, document.getElementById('root'));
+
+```
+
