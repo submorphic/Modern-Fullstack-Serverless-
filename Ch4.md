@@ -357,4 +357,33 @@ props.history.push('/profile').
 If the user is signed in, then we take no action and allow them to view
 the route.
 
+#### Router Component
+The Router component will define the components and routes we
+want to have available in our application.
+This component will also be setting the current route name that will
+be used in the Nav component to highlight the current route based on
+the window.location.href property.
 
+The components that you will be using from React Router are
+HashRouter, Switch, and Route:
+
+##### HashRouter
+This is a router that uses the hash portion of the URL (i.e.,
+window.location.hash) to keep your UI in sync with the URL.
+
+##### Switch
+Switch renders the first child route that matches the location.
+This is different than the default functionality of just using the
+router, which may render multiple routes that match the location.
+
+##### Route
+This component allows you to define the component that you’d
+like to render based on a path parameter:
+
+```jsx 
+/* src/Router.js */
+import React, { useState, useEffect } from 'react'
+import { HashRouter, Switch, Route } from 'react-router-dom'
+
+
+```
