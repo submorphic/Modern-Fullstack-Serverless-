@@ -522,3 +522,15 @@ To test the app, we can now run the start command:
   ~ npm start
 ```
 
+### Conclusion
+
+Congratulations, you’ve built out an authentication flow with routing and protected routes! 
+
+Here are a few things to keep in mind from this part:
+
+1. Use the withAuthenticator HOC to quickly get up and running with a preconfigured authentication flow.
+
+2.  Use the Auth class for more fine-grained control over authentication and to get data about the currently signed-in user.
+
+3.  Ant Design helps you get started with preconfigured design without having to write any style-specific code.
+
