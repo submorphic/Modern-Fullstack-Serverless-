@@ -145,3 +145,23 @@ higher-level abstractions for managing authentication. These
 components will render an entire (customizable) authentication
 flow with only a few lines of code.
 
+
+## Building the App
+
+The next step will be to go ahead and create the folder and file
+structure for the app.
+
+### Creating the File and Folder Structure
+
+In your app, create the following files in the src directory:
+
+```jsx
+ 
+ Container.js
+ Nav.js
+ Profile.js
+ 
+ Protected.js
+ Public.js
+ Router.js
+```
