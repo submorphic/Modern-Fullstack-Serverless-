@@ -349,3 +349,12 @@ export default Protected
 ```
 
 
+When the component is rendered, we check to see if the user is signed in to the app by calling Auth.currentAuthenticatedUser in the useEffect hook. 
+
+If this API call is not successful, that means the user is not signed in and we need to redirect them. We redirect them by calling
+props.history.push('/profile').
+
+If the user is signed in, then we take no action and allow them to view
+the route.
+
+
