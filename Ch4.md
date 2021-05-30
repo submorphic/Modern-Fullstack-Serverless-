@@ -418,3 +418,12 @@ return (
 )
 }
 ```
+
+#### Profile Component
+
+The last component we need to finish our app is the Profile component. This component will do several things:
+
+1. Render the authentication form if the user is not signed in.
+2. Provide a sign-out button.
+3.Render the user’s profile information to the UI.
+
