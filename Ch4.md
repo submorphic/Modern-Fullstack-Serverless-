@@ -475,3 +475,19 @@ export default withAuthenticator(Profile);
 
 ```
 
+#### Styling the UI Components
+Under the hood, the Amplify UI components are implemented using
+Web Components. This means we can target them as a first-class
+HTML element for CSS styling. We want our UI components to
+match the blue colors in the rest of our app. To do so, we can add the
+following CSS property to the bottom of index.css to define the
+colors we’d like to use:
+
+```css
+/* src/index.css */
+:root {
+--amplify-primary-color: #1890ff;
+--amplify-primary-tint: #1890ff;
+--amplify-primary-shade: #1890ff;
+}
+```
