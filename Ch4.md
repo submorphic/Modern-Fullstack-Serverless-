@@ -58,3 +58,22 @@ such items as:
 5. Resetting a user’s password
 6. Confirming an MFA code
 
+
+### Amazon Cognito Integration with AWS Amplify
+
+AWS Amplify has support for Amazon Cognito in various ways. First
+of all, you can create and configure Amazon Cognito services directly
+from the Amplify CLI. Once you’ve created the authentication
+service via the CLI you can then call various methods (like signUp,
+signIn, and signOut) from your JavaScript application using the
+Amplify JavaScript client library.
+
+Amplify also has preconfigured UI components that allow you to
+scaffold out entire authentication flows in just a couple of lines of
+code for frameworks like React, React Native, Vue, and Angular.
+In this chapter, you’ll be using a combination of the Amplify CLI,
+Amplify JavaScript client, and Amplify React UI components to
+build an application that demonstrates routing, authentication, and
+protected routes. You’ll also use React Router for routing and Ant
+Design to give the application some basic styling
+
