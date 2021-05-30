@@ -107,3 +107,17 @@ Initialize a new Amplify project:
 
 ```
 
+With the Amplify project now initialized, we can create the
+authentication service. To do so, run the following command:
+
+```javascript 
+  ~ amplify add auth
+
+```
+Now the authentication service has been configured and you can
+deploy it using the amplify push command:
+
+```javascript
+  ~ amplify push
+```
+
