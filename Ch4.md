@@ -31,4 +31,12 @@ route once authenticated.
 This app will also persist user state, so if they refresh the app or
 navigate away from it and come back, they will stay signed in.
 
+## Introduction to Amazon Cognito
+
+Amazon Cognito is a fully managed identity service from AWS.
+Cognito allows for simple and secure user sign-up, sign-in, access
+control, and user identity management. Cognito scales to millions of
+users and also supports sign-in with social identity providers, such as
+Facebook, Google, and Amazon. It is also free for the first 50,000
+users of any app.
 
