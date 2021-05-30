@@ -121,3 +121,27 @@ deploy it using the amplify push command:
   ~ amplify push
 ```
 
+### Client Authentication Overview
+
+Using Amplify, there are two main ways to implement authentication
+on the client now that the service is up and running:
+
+##### Auth class
+
+The Amplify client library exposes an Auth class with over 30
+different methods that allow you to handle everything associated
+with user management. Some examples of the methods available
+are Auth.signUp, Auth.signIn, and Auth.signOut.
+Using this class, you can create a completely custom
+authentication flow based on your application’s requirements. To
+do so, you have to manage all of the styling and application state
+yourself.
+
+##### Framework-specific authentication components
+
+The framework-specific libraries available in Amplify for
+frameworks like React, React Native, Vue, and Angular expose
+higher-level abstractions for managing authentication. These
+components will render an entire (customizable) authentication
+flow with only a few lines of code.
+
