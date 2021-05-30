@@ -93,3 +93,17 @@ To begin, open your terminal and create a new React application:
   ~ cd basic-authentication
 ```
 
+Then install the AWS Amplify, AWS Amplify React, React Router,
+and Ant Design libraries:
+
+```javascript
+ ~ npm install aws-amplify @aws-amplify/ui-react antd react-router-dom
+```
+
+Initialize a new Amplify project:
+
+```javascript
+  ~ amplify init
+
+```
+
