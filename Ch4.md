@@ -427,3 +427,24 @@ The last component we need to finish our app is the Profile component. This comp
 2. Provide a sign-out button.
 3.Render the user’s profile information to the UI.
 
+
+To sign the user out, we use the AmplifySignOut UI component.
+This component will sign the user out and re-render the UI to show
+the authentication form.
+
+To display the user profile data, we use the
+Auth.currentAuthenticatedUser method. If the user is
+signed in, this method will return the user profile data along with
+information about the session.
+The information that we are interested in using for the profile are the username and user attributes, which include the phone number, email, and any other information gathered when the user signed up:
+
+```javascript 
+/* src/Profile.js */
+import React, { useState, useEffect } from 'react'
+import { Auth } from 'aws-amplify'
+
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import Container from './Container'
+
+
+```
