@@ -221,3 +221,41 @@ apply some reusable styles between the components:
 export default Container; 
 ```
 
+Using this component, you can now apply consistent styling across
+the entire app without having to rewrite your styles. You can then use
+it like this:
+
+```jsx
+<Container>
+<h1>Hello World</h1>
+</Container>
+
+```
+
+
+Anything that is a child of the Container component will be
+rendered with the styling set in the Container component. Doing
+this allows you to have a single place that you can control the styles.
+In case you want to make styling changes later, you only need to
+adjust one component.
+
+### Public Component
+This component simply renders the name of the route to the UI and
+can be accessed whether or not the user is signed in. In this
+component, you will use the Container component to add some
+padding and margin:
+
+```jsx 
+/* src/Public.js */
+import React from 'react'
+import Container from './Container'
+function Public() {
+return (
+<Container>
+<h1>Public route</h1>
+</Container>
+)
+}
+export default Public
+```
+
