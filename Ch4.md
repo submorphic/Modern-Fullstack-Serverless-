@@ -46,3 +46,15 @@ creating an identity pool. Where user pools come in is that the
 source of these identities could be a Cognito user pool or even
 Facebook or Google.
 
+
+Cognito user pools allow your application to invoke various methods
+against the service to manage all aspects of user identity, including
+such items as:
+
+1. Signing up a user
+2. Signing in a user
+3. Signing out a user
+4. Changing a user’s password
+5. Resetting a user’s password
+6. Confirming an MFA code
+
