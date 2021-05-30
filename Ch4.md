@@ -259,3 +259,55 @@ return (
 export default Public
 ```
 
+
+### Nav Component
+
+The Nav (navigation) component will be utilizing the Ant Design
+library and React Router. Ant Design will provide the Menu and
+Icon components to make a nice looking menu, and React Router
+will provide the Link component so that we can link and navigate to
+different parts of the app.
+
+
+You’ll also notice that there is a current prop that is passed in to
+the component. This prop represents the name of the current route.
+For this application the value will either be home, profile, or
+protected. The current value is used in the selectedKeys
+array of the Menu component to highlight the current route in the
+navigation bar. This value will be calculated in the Router
+component and passed into this component as a prop:
+
+```jsx
+/* src/Nav.js */
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Menu } from 'antd'
+import { HomeOutlined, ProfileOutlined, FileProtectOutlined
+} from
+'@ant-design/icons'
+const Nav = (props) => {
+const { current } = props
+return (
+<div>
+<Menu selectedKeys={[current]} mode="horizontal">
+<Menu.Item key='home'>
+<Link to={`/`}>
+<HomeOutlined />Home
+</Link>
+</Menu.Item>
+<Menu.Item key='profile'>
+<Link to='/profile'>
+<ProfileOutlined />Profile
+</Link>
+</Menu.Item>
+<Menu.Item key='protected'><Link to='/protected'>
+<FileProtectOutlined />Protected
+</Link>
+</Menu.Item>
+</Menu>
+</div>
+)
+}
+export default Nav
+```
+
