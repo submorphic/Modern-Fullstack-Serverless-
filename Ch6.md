@@ -241,3 +241,91 @@ Now that the project has been initialized, we can begin adding the
 services. The services we’ll need for this chapter will be Amazon
 
 
+Cognito, Amazon S3, and AWS Lambda. We’ll start by adding
+Amazon Cognito and testing out a post-confirmation Lambda trigger.
+
+
+### Adding a Post-Confirmation Lambda Trigger
+
+The next thing we want to do is create an authentication service. We
+will then create and configure a post-confirmation Lambda trigger.
+
+This means we want a Lambda function to be invoked every time
+someone successfully signs up and confirms their account using our
+authentication service. This post-confirmation trigger only fires once
+per confirmed user:
+
+```javascript
+~ amplify add auth
+? Do you want to use the default authentication and security
+configuration?
+Default configuration
+? How do you want users to be able to sign in? Username
+? Do you want to configure advanced settings? Yes
+? What attributes are required for signing up? Email
+? Do you want to enable any of the following capabilities?
+Add User to Group
+? Enter the name of the group to which users will be added.
+Admin
+? Do you want to edit your add-to-group function now? Y
+
+```
+
+Now, update the function with the following code:
+
+
+```javascript 
+
+// amplify/backend/function/<function_name>/src/add-to-group.js
+
+
+        const aws = require('aws-sdk');
+        exports.handler = async (event, context, callback) => {
+        const cognitoProvider = new
+        aws.CognitoIdentityServiceProvider({
+        apiVersion: '2016-04-18'});
+        let isAdmin = false
+        const adminEmails = ['dabit3@gmail.com']
+        // If the user is one of the admins, set the isAdmin
+        variable to true
+        if
+        (adminEmails.indexOf(event.request.userAttributes.email) !==
+        -1) {
+        isAdmin = true
+        }
+        const groupParams = {
+        UserPoolId: event.userPoolId,
+        }
+        const userParams = {
+          UserPoolId: event.userPoolId,
+          Username: event.userName,
+         }
+          if (isAdmin) {
+           groupParams.GroupName = 'Admin',
+           userParams.GroupName = 'Admin'
+           
+        // First check to see if the group exists, and if not create the group
+        
+            try {
+              await cognitoProvider.getGroup(groupParams).promise();
+            } catch (e) {
+              await cognitoProvider.createGroup(groupParams).promise();
+
+            }
+        // If the user is an administrator, place them in the
+        Admin group
+        try {
+        await
+        cognitoProvider.adminAddUserToGroup(userParams).promise();
+        callback(null, event);
+        } catch (e) {
+           callback(e);
+         }
+        
+        } else {
+        
+        // If the user is in neither group, proceed with no
+        action
+        callback(null, event)}
+       }
+```
