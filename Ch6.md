@@ -378,11 +378,11 @@ admin. To do so, open src/App.js and add the following:
       }
        return (
             <div className="App">
-            <header>
-            <h1>Hello World</h1>
-            { isAdmin && <p>Welcome, Admin</p> }
-            </header>
-            <AmplifySignOut />
+                <header>
+                    <h1>Hello World</h1>
+                    { isAdmin && <p>Welcome, Admin</p> }
+                </header>
+                <AmplifySignOut />
             </div>
           );
     }
