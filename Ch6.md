@@ -322,3 +322,28 @@ Now, update the function with the following code:
           callback(null, event)}
        }
 ```
+
+In this function, there is one main piece of functionality.
+
+If the user is one of the admins specified in the admins email array, we automatically place them in the group called Admins.
+
+Change the values in the adminEmails array to include your email address.
+
+To deploy the service, run the push command:
+
+```
+  ~ amplify push
+```
+
+Now that the backend is set up, we can test it out. To do so, we first
+need to configure the React project to recognize the Amplify
+dependencies. Open src/index.js and add the following below the last
+import:
+
+```javascript
+    
+    import Amplify from 'aws-amplify';
+    import config from './aws-exports';
+    
+    Amplify.configure(config);
+```
