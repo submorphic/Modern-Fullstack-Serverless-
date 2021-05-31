@@ -201,3 +201,24 @@ These actions could be anything from a user signing up, a user confirming their 
 You’ll be using these events and the information contained within
 them to perform different types of actions from within the functions.
 
+
+## IAM Permissions and Trigger Configuration
+
+1. When setting up these triggers using the CLI, a couple of things are
+happening under the hood:The CLI is enabling the trigger itself in the Lambda
+configuration. When a trigger is enabled, the event will be
+sent to the function every time that interaction happens (API
+event, S3 upload, etc.).
+
+2. The CLI is giving additional permissions to the function
+itself to interact with other services. For instance, when we
+enable the S3 trigger in this chapter, we are wanting the
+Lambda function to be able to read and store images in that bucket.
+
+3. To enable this, the CLI will add additional Identity and
+Access Management (IAM) policies under the hood to the
+function, giving it permissions like read and write access to
+work with S3, or permissions to interact with the Cognito
+user pool in our other example.
+
+
