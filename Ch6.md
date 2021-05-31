@@ -222,3 +222,22 @@ work with S3, or permissions to interact with the Cognito
 user pool in our other example.
 
 
+### Creating the Base Project
+
+The first thing we’ll do is create a new React application and install
+the dependencies we’ll need for this chapter:
+```
+ ~ npx create-react-app lambda-trigger-example
+ ~ cd lambda-trigger-example
+ ~ npm install aws-amplify @aws-amplify/ui-react uuid
+```
+Next, we’ll create a new Amplify project:
+
+```
+ ~ amplify init
+ # walk through the steps like we've done in the previous projects
+```
+Now that the project has been initialized, we can begin adding the
+services. The services we’ll need for this chapter will be Amazon
+
+
