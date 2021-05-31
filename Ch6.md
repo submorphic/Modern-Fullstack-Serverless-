@@ -166,4 +166,38 @@ key, and the size of the item being stored:
 
 ```
 
+### Amazon Cognito Event
+
+The Amazon Cognito event data is the data structure that will be passed into the function when being invoked from an Amazon Cognito action. 
+
+These actions could be anything from a user signing up, a user confirming their account, or a user signing in, among other available events:
+
+
+```javascript 
+{
+"version": "1",
+"region": "us-east-1",
+"userPoolId": "us-east-1_uVWAMpQuY",
+"userName": "dabit3",
+"callerContext": {
+"awsSdkVersion": "aws-sdk-unknown-unknown",
+"clientId": "2ects9inqraapp43ejve80pv12"
+},
+"triggerSource": "PostConfirmation_ConfirmSignUp",
+"request": {
+"userAttributes": {
+"sub": "164961f8-13f7-40ed-a8ca-d441d8ec4724",
+"cognito:user_status": "CONFIRMED",
+"email_verified": "true",
+"phone_number_verified": "false",
+"phone_number": "+16018127241",
+"email": "dabit3@gmail.com"
+}
+},
+"response": {}
+}
+```
+
+You’ll be using these events and the information contained within
+them to perform different types of actions from within the functions.
 
