@@ -351,7 +351,7 @@ import:
 Next, we’ll sign up a new user and display a greeting if they are an
 admin. To do so, open src/App.js and add the following:
 
-```javascript
+```jsx
     
     import React, { useEffect, useState } from 'react';
     import { Auth } from 'aws-amplify';
@@ -388,4 +388,5 @@ admin. To do so, open src/App.js and add the following:
     }
 
     export default withAuthenticator(App);
-    ```
+    
+```
