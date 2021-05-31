@@ -25,3 +25,20 @@ will place them in a group called Admin.
 
 #### A function that automatically resizes an image after it has been uploaded to Amazon S3
 
+Many applications require dynamic image resizing on the server
+after a user has uploaded an image. This is done for many
+reasons, ranging from the need to make the web application more
+performant by compressing images to the need to dynamically
+create avatars or thumbnail images of a smaller size for images.
+
+## Event Sources and Data Structure
+
+In part 2, we briefly talked about event sources for serverless functions as part of an event-based architecture.
+
+The only event source we have implemented up until this point has been from API Gateway: an HTTP request that triggered the function, and fetched
+data from an API and returned it in the response.
+
+In this part, we’ll be working with two other event types and sources, one from Amazon S3 and one from Amazon Cognito. 
+
+
+
