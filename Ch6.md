@@ -309,6 +309,7 @@ Now, update the function with the following code:
 
             }
         // If the user is an administrator, place them in the Admin group
+        
         try {
             await cognitoProvider.adminAddUserToGroup(userParams).promise();
             callback(null, event);
@@ -317,9 +318,7 @@ Now, update the function with the following code:
          }
         
         } else {
-        
-        // If the user is in neither group, proceed with no
-        action
-        callback(null, event)}
+        // If the user is in neither group, proceed with no action
+          callback(null, event)}
        }
 ```
