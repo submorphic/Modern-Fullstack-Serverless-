@@ -132,3 +132,22 @@ Now, the Amplify project has been initialized and we can go ahead and start addi
 The first feature we will add is authentication. This app will need to have basic authentication but will also need to have the ability to add admin users dynamically via a Lambda post-confirmation trigger.
 
 To enable this, we will create the authentication service as well as a Lambda trigger that will allow us to add a predefined set of users into an Admin group as they sign up.
+
+### Authentication
+
+To add authentication with Cognito, we’ll again use the auth
+category:
+
+```
+~ amplify add auth
+? Do you want to use the default authentication and security
+configuration?
+Default configuration
+? How do you want users to be able to sign in? Username
+? Do you want to configure advanced settings? Yes? What attributes are required for signing up? Email
+? Do you want to enable any of the following capabilities?
+Add User to Group
+? Enter the name of the group to which users will be added.
+Admin
+? Do you want to edit your add-to-group function now? Y
+```
