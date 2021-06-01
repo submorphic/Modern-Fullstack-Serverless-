@@ -23,3 +23,29 @@ This type will hold the individual performance information,
 including the performer, the description, the stage of the
 performance, and the time of the performance.
 
+For this type of API, ideally you would want to have at least the following access patterns:
+
+Query for a single stage and performances for the stage
+
+Query for all stages and performances for each stage
+
+Query for an individual performance and the corresponding stage info
+
+Query for all performances and the corresponding stage info
+
+The question is now usually this: how can you enable these different
+relationships and access patterns? And in our case, how can we do
+this using a NoSQL database like DynamoDB? There are two ways to
+accomplish this:
+
+Pattern your data in DynamoDB in a way that enables all of
+these access patterns to be performed using a single table by
+taking advantage of a combination of primary keys, sort
+keys, and local secondary indexes. For this to work with
+AppSync, we would have to write and maintain all of the
+resolver logic by hand and from scratch.
+
+Enable these relationships directly at the resolver level.
+Because we are using GraphQL, and GraphQL enables per-
+field resolvers, this can be done. To understand this better
+let’s take a look at one of the types we will be working with.
