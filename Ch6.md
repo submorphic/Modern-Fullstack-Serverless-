@@ -564,3 +564,33 @@ export default App;
 
 ```
 
+
+Next, run the app:
+```
+ ~ npm start
+
+```
+
+When you upload an image that is wider than 1,000 pixels, you’ll
+notice that it will initially load as the original size, but if you reload
+the app, you will see that the image has been resized to the correct
+1,000-pixel width.
+
+## Conclusion
+
+Congratulations, you’ve now successfully implemented two types of
+Lambda triggers!Here are a few things to keep in mind from this chapter:
+
+1. Lambda functions can be invoked from many different event
+types, including API calls, image uploads, database
+operations, and authentication events.
+
+2. The event data structure differs based on the type of event
+invoking the Lambda function.
+Understanding the data available in the event variable
+enables you to better evaluate the things that can be
+accomplished within the function.
+
+3. When a Lambda trigger is enabled by the Amplify CLI,
+additional IAM permissions are given to the function,
+allowing it to directly interact with other services.
