@@ -96,7 +96,7 @@ allow us to be able to request stages and their corresponding
 performances in a single GraphQL query.
 
 
-## Starting to Build the App
+### Starting to Build the App
 
 To get started, we’ll again be walking through the steps of creating a
 new React project, installing dependencies, initializing a new
@@ -112,3 +112,17 @@ Next, install the dependencies:
 ```
   ~ npm install aws-amplify antd @aws-amplify/ui-react react-router-dom
 ```
+
+## Creating the Amplify App and Adding the Features
+
+Next, initialize a new Amplify project in the root of the project directory:
+```
+~ amplify init
+# Follow the steps to give the project a name, environment
+name, and set the
+default text editor.
+# Accept defaults for everything else and choose your AWS
+Profile.
+```
+
+Now, the Amplify project has been initialized and we can go ahead and start adding features.
