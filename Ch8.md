@@ -78,3 +78,13 @@ database using a GSI, returning only the performances for
 that stage ID.
 
 
+### Custom Data Access Patterns Using GSIs
+
+One of the most powerful things about DynamoDB is that it allows
+(at the time of this writing) 20 additional GSIs per table.
+
+Using either a GSI or a combination of GSI + sort key (also think of this as a filter key), you are able to create extremely flexible and powerful data access patterns for your data.
+
+The GraphQL Transform library alsohas a directive, @key, that makes it simple to configure custom index
+structures for @model types.
+
