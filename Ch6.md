@@ -390,3 +390,21 @@ admin. To do so, open src/App.js and add the following:
     export default withAuthenticator(App);
     
 ```
+
+## Dynamic Image Resizing with AWS Lambda and Amazon S3
+
+In the next example, we will add functionality that allows users to
+upload images to Amazon S3. We’ll also configure an S3 trigger to
+call a Lambda function every time a file is uploaded to the bucket.
+
+In this function, we’ll check the size of the image, and if it is above a
+certain width, we will resize it to be below the width threshold.
+
+For this to work, we need to enable S3 to trigger the Lambda function
+in our project when a file is uploaded. We can do this using the
+Amplify CLI by just creating the S3 bucket and choosing the correct
+configuration. From the CLI, run the following commands:
+
+```
+  ~ amplify add storage
+```
