@@ -95,3 +95,20 @@ stage ID as the GSI on the Performance table. Doing this will
 allow us to be able to request stages and their corresponding
 performances in a single GraphQL query.
 
+
+## Starting to Build the App
+
+To get started, we’ll again be walking through the steps of creating a
+new React project, installing dependencies, initializing a new
+Amplify app, and adding features via the CLI.
+Change into the directory where you would like the app to live, and
+create a new React project:
+```
+  ~ npx create-react-app festivalapp
+  ~ cd festivalapp
+```
+
+Next, install the dependencies:
+```
+  ~ npm install aws-amplify antd @aws-amplify/ui-react react-router-dom
+```
