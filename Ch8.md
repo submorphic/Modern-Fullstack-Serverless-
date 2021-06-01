@@ -66,3 +66,15 @@ performances: [Performance]
 When creating a resolver, or resolvers, for this type, here is an
 example chain of actions that you could assume would happen when
 a request is made for stages and corresponding performances:
+
+1. The main Stage GraphQL resolver will use the stage ID to
+retrieve the stage information from the Stage table in the
+database.
+
+2. The field of performances on the Stage type will have
+its own GraphQL resolver. This resolver should use the stage
+ID to retrieve the related performances by querying the
+database using a GSI, returning only the performances for
+that stage ID.
+
+
