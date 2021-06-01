@@ -9,3 +9,9 @@ types and fields, how to enable multiple authorization modes for an
 AppSync API, and how to enable route parameters using React
 Router.
 
+### Relationships Between GraphQL Types
+
+When creating a GraphQL API, or any API, modeling relationships
+between data becomes very important to understand. For example,
+the app that we are building will have the following two types:
+
