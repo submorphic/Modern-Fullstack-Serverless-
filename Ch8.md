@@ -11,7 +11,7 @@ Router.
 
 ### Relationships Between GraphQL Types
 
-When creating a GraphQL API, or any API, modeling relationships
-between data becomes very important to understand. For example,
-the app that we are building will have the following two types:
+When creating a GraphQL API, or any API, modeling relationships between data becomes very important to understand.
+
+For example, the app that we are building will have the following two types:
 
