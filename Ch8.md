@@ -11,3 +11,15 @@ When creating a GraphQL API, or any API, modeling relationships between data bec
 
 For example, the app that we are building will have the following two types:
 
+
+#### Stage
+This type will hold the stage information for individual
+performances, including the stage name and stage ID. Each stage
+will have a number of performances that are associated with it.
+
+
+#### Performance
+This type will hold the individual performance information,
+including the performer, the description, the stage of the
+performance, and the time of the performance.
+
