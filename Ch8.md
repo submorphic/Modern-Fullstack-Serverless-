@@ -49,3 +49,20 @@ Enable these relationships directly at the resolver level.
 Because we are using GraphQL, and GraphQL enables per-
 field resolvers, this can be done. To understand this better
 let’s take a look at one of the types we will be working with.
+
+
+### STAGE TYPE IN GRAPHQL
+
+To better understand these concepts, let’s take a look at one of the
+types we will be working with:
+
+```grapghql
+type Stage {
+id: ID!
+name: String!
+performances: [Performance]
+}
+```
+When creating a resolver, or resolvers, for this type, here is an
+example chain of actions that you could assume would happen when
+a request is made for stages and corresponding performances:
