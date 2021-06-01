@@ -88,3 +88,10 @@ Using either a GSI or a combination of GSI + sort key (also think of this as a f
 The GraphQL Transform library alsohas a directive, @key, that makes it simple to configure custom index
 structures for @model types.
 
+
+We’ll use the @key directive to create an access pattern that will
+allow us to query performances for a given stage ID by setting the
+stage ID as the GSI on the Performance table. Doing this will
+allow us to be able to request stages and their corresponding
+performances in a single GraphQL query.
+
