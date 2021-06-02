@@ -308,26 +308,25 @@ type Stage @model
 { allow: public, operations: [read] },
 { allow: groups, groups: ["Admin"] }
 ]) {
-id: ID!
-name: String!
-performances: [Performance] @connection(keyName:
-"byStageId", fields: ["id"])
+  id: ID!
+  name: String!
+  performances: [Performance] @connection(keyName: "byStageId", fields: ["id"])
 }
+
+
 type Performance @model
 @key(name: "byStageId", fields: ["performanceStageId"])
 @auth(rules: [{ allow: public, operations: [read] },
 { allow: groups, groups: ["Admin"] }
 ]) {
-id: ID!
-performanceStageId: ID!
-productID: ID
-performer: String!
-imageUrl: String
-description: String!
-time: String
-stage: Stage @connection
+
+  id: ID!
+  performanceStageId: ID!
+  productID: ID
+  performer: String!
+  imageUrl: String
+  description: String!
+  time: String
+  stage: Stage @connection
 }
 ```
-
-
-
