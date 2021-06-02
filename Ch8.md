@@ -262,3 +262,37 @@ exports.handler = async (event, context, callback) => {
 }
 ```
 
+### The AppSync API
+
+Next, we’ll create the AppSync GraphQL API. Remember that for
+this API, we will need to enable multiple authentication types for
+both public and protected access. This can all be enabled by the CLI.
+To add the AppSync API, we’ll use the api category:
+
+```
+~ amplify add api
+? Please select from one of the below mentioned services:GraphQL
+? Provide API name: festivalapi
+? Choose an authorization type for the API: Amazon Cognito
+User Pool
+Do you want to configure advanced settings for the GraphQL
+API: Yes
+? Configure additional auth types? Y
+? Choose the additional authorization types you want to
+configure for the API:
+API key
+? Enter a description for the API key: public (or a custom
+description)
+? After how many days from now the API key should expire:
+365 (or a custom
+expiration date)
+? Configure conflict detection? N
+? Do you have an annotated GraphQL schema? N
+? Do you want a guided schema creation? Y
+? What best describes your project: Single object with
+fields
+? Do you want to edit the schema now? Y
+
+```
+This should open the GraphQL schema, located at ```amplify/backend/api/festivalapi/schema.graphql```, in your text editor.
+
