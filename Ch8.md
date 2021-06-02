@@ -497,4 +497,33 @@ allow a user to sign up, sign in, and sign out. The idea for this
 component is to give admins a way to sign up so they can then create
 and manage the API as an admin.
 
+If you ever need to update your backend code like the GraphQL
+schema or Lambda function, you can make the changes locally, then
+run amplify push to deploy the changes to the backend:
 
+```jsx
+/* src/Admin.js */
+
+import React from 'react'
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
+import { Auth } from 'aws-amplify'
+import { Button } from 'antd'
+
+
+function Admin() {
+  return (
+    <div>
+      <h1 style={titleStyle}>Admin</h1>
+      <AmplifySignOut />
+    </div>
+  )
+}
+
+const titleStyle = {
+fontWeight: 'normal',
+margin: '0px 0px 10px 0px'
+}
+
+export default withAuthenticator(Admin); 
+```
