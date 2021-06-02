@@ -371,3 +371,14 @@ backend:
  ~ amplify push
 
 ```
+
+## Building the Frontend
+
+Now that the project has been created and configured and the
+backend has been deployed, we can start setting up the client!The first thing we will do is create the files we will need for this app:
+
+```
+~ cd src
+~ touch Container.js Footer.js Nav.js Admin.js Router.js Performance.js Home.js
+```
+
