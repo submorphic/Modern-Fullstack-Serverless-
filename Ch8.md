@@ -427,3 +427,34 @@ const container = {
 }
 ```
 
+Footer
+
+Here, we’ll create the Footer component that will serve as a
+reusable component to add a basic footer, as well as a link for admins
+to be able to sign up and sign in:
+
+```jsx
+/* src/Footer.js */
+import React from 'react'; 
+import { Link } from 'react-router-dom'; 
+
+function Footer() {
+  return (
+    <div style={footerStyle}>
+      <Link to="/admin">
+        Admins
+      </Link>
+    </div>
+  )
+}
+
+const footerStyle = {
+  borderTop: '1px solid #ddd',
+  display: 'flex',
+  alignItems: 'center',
+  padding: 20
+}
+
+export default Footer
+
+```
