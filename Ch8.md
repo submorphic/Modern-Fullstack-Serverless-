@@ -360,3 +360,14 @@ The @connection directive allows us to model relationships
 between types. Types of relationships that can be created are belongs
 to, one to many, many to one, or many to many.
 
+
+
+## Deploying the Services
+
+With all of the services configured, we’re ready to deploy the
+backend:
+
+```
+ ~ amplify push
+
+```
