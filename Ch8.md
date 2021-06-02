@@ -185,4 +185,11 @@ directory:
 
 ```
 
+## Building the Backend
+
+The first feature we will add is authentication. This app will need to have basic authentication but will also need to have the ability to add admin users dynamically via a Lambda post-confirmation trigger.
+
+To enable this, we will create the authentication service as well as a Lambda trigger that will allow us to add a predefined set of users into an Admin group as they sign up.
+
+
 
