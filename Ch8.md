@@ -296,3 +296,38 @@ fields
 ```
 This should open the GraphQL schema, located at ```amplify/backend/api/festivalapi/schema.graphql```, in your text editor.
 
+
+The schema we will be using has two main types, a Stage and a Performance.
+
+Use the following schema and continue:
+
+```graphql
+
+type Stage @model
+@auth(rules: [
+{ allow: public, operations: [read] },
+{ allow: groups, groups: ["Admin"] }
+]) {
+id: ID!
+name: String!
+performances: [Performance] @connection(keyName:
+"byStageId", fields: ["id"])
+}
+type Performance @model
+@key(name: "byStageId", fields: ["performanceStageId"])
+@auth(rules: [{ allow: public, operations: [read] },
+{ allow: groups, groups: ["Admin"] }
+]) {
+id: ID!
+performanceStageId: ID!
+productID: ID
+performer: String!
+imageUrl: String
+description: String!
+time: String
+stage: Stage @connection
+}
+```
+
+
+
