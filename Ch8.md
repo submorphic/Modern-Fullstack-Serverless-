@@ -382,3 +382,23 @@ backend has been deployed, we can start setting up the client!The first thing we
 ~ touch Container.js Footer.js Nav.js Admin.js Router.js Performance.js Home.js
 ```
 
+
+The next thing we will need to do is open src/index.js to add the
+Amplify configuration, import the Ant Design styles, and replace the
+main component with the Router that we will be creating soon.
+Update the file with the following code:
+
+```jsx
+/* src/index.js */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Router from './Router';
+import 'antd/dist/antd.css';
+import Amplify from 'aws-amplify'
+import config from './aws-exports'
+Amplify.configure(config)
+ReactDOM.render(<Router />,
+document.getElementById('root'));
+
+```
+
