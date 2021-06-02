@@ -458,3 +458,34 @@ const footerStyle = {
 export default Footer
 
 ```
+
+Nav
+Now, open src/Nav.js to create the basic navigation. There will only
+be one link: a link back to the main view that will hold all of the
+shows and performances:
+
+```jsx
+/* src/Nav.js */
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+import { Menu } from 'antd'
+import { HomeOutlined } from '@ant-design/icons'
+
+const Nav = (props) => {
+  const { current } = props
+  return (
+    <div>
+      <Menu selectedKeys={[current]} mode="horizontal">
+        <Menu.Item key='home'>
+          <Link to={`/`}>
+            <HomeOutlined />Home
+          </Link>
+        </Menu.Item>
+      </Menu>
+    </div>
+  )
+}
+export default Nav
+
+```
