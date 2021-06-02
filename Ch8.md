@@ -330,3 +330,33 @@ type Performance @model
   stage: Stage @connection
 }
 ```
+
+#### @AUTH
+
+First, the @auth directive allows us to pass in an array of
+authorization rules. Each rule has an allow field (required) as well
+as other metadata (optional), including things like specifying the
+provider if it is different than the default authorization type.
+In the Stage and Performance type, we’ve used two
+authorization types, one for group access (groups) and another for
+public access (public). You’ll notice that for the public access,
+we’ve also set an array of operations. This array should contain a list
+of the operations we would like to enable on the API. If there are no
+operations listed, then by default all operations would be enabled.
+
+
+#### @KEY
+The @key directive enables us to add GSIs and sort keys to a
+DynamoDB table for custom data access patterns. In the preceding
+schema, we’ve created a key called byStageId that will allow us
+to query the Performance table for performances by stage ID using a
+field called performanceStageId (on the Performance
+table). The resolver for the performances field will then use the
+ID of the stage to query for performances by stage ID.
+
+
+#### @CONNECTION
+The @connection directive allows us to model relationships
+between types. Types of relationships that can be created are belongs
+to, one to many, many to one, or many to many.
+
