@@ -489,3 +489,12 @@ const Nav = (props) => {
 export default Nav
 
 ```
+
+Admin
+
+The Admin component we’ll create will only do three things for now:
+allow a user to sign up, sign in, and sign out. The idea for this
+component is to give admins a way to sign up so they can then create
+and manage the API as an admin.
+
+
