@@ -167,10 +167,22 @@ create a new React project:
 ```
 
 Next, install the dependencies:
+
 ```
  ~ npm install aws-amplify antd @aws-amplify/ui-react react-router-dom
  ```
  
  
+## Creating the Amplify App and Adding the Features
+
+Next, initialize a new Amplify project in the root of the project
+directory:
+
+```
+ ~ amplify init
+ # Follow the steps to give the project a name, environment name, and set the default text editor.
+ # Accept defaults for everything else and choose your AWS Profile.
+
+```
 
 
