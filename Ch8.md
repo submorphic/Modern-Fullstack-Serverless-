@@ -405,3 +405,25 @@ ReactDOM.render(<Router />, document.getElementById('root'));
 
 ```
 
+Container
+Now, let’s create the Container component that will serve as a
+reusable component to add padding and styling for our views:
+
+```jsx
+/* src/Container.js */
+import React from 'react'
+
+export default function Container({ children }) {
+ return (
+    <div style={container}>
+    {children}
+    </div>
+ )
+}
+
+const container = {
+  padding: '30px 40px',
+  minHeight: 'calc(100vh - 120px)'
+}
+```
+
