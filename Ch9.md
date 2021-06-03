@@ -61,10 +61,10 @@ Saving data
 
 ```javascript
 await DataStore.save(
-new Message({
-title: 'Hello World',
-sender: 'Chris'
-})
+  new Message({
+    title: 'Hello World',
+    sender: 'Chris'
+  })
 ))
 
 ```
