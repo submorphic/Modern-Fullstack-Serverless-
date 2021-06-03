@@ -69,3 +69,9 @@ await DataStore.save(
 
 ```
 
+Reading data 
+
+```javascript 
+const posts = await DataStore.query(Post); 
+```
+
