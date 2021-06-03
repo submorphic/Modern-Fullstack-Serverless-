@@ -124,9 +124,8 @@ You can also chain multiple predicates into a single operation:
 const message = await DataStore .query(Message, m => m.title('contains', 'Hello').sender('eq', 'Chris'))
 ```
 
-These predicates enable you to have many ways to retrieve different
-selection sets from your local data. Instead of retrieving the entire
-collection and filtering on the client, you are able to query from the
-store exactly the data that you need.
+These predicates enable you to have many ways to retrieve different selection sets from your local data. Instead of retrieving the entire collection and filtering on the client, you are able to query from the store exactly the data that you need.
 
+
+## Building an Offline and Real-Time App with Amplify DataStore
 
