@@ -86,3 +86,13 @@ await DataStore.save(
 )
 
 ```
+
+Observing/subscribing to changes in data for real-time functionality
+
+```javascript
+
+ const subscription = DataStore.observe(Message).subscribe(msg => {
+    console.log(message.model, message.opType, message.element)
+});
+```
+
