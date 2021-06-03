@@ -45,3 +45,13 @@ Now, you are all set up and can begin interacting with DataStore.
 To interact with the Store, first import the DataStore API from Amplify and the Model you’d like to use. From there, you can perform actions against the store.
 
 
+| Operation      | Code |
+| ----------- | ----------- |
+|   Import the model and DataStore
+API    |    import { DataStore } from '@aws-
+amplify/datastore'
+import { Message} from './model
+s'    |
+|    |         |
+|             |              |
+|
