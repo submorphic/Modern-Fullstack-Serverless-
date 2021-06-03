@@ -96,3 +96,25 @@ Observing/subscribing to changes in data for real-time functionality
 });
 ```
 
+DataStore Predicates
+You can apply predicate filters against the DataStore using the fields
+defined on your GraphQL type along with the following conditions
+supported by DynamoDB:
+```
+Strings: eq | ne | le | lt | ge | gt | contains | notContains | beginsWith | between
+
+Numbers: eq | ne | le | lt | ge | gt | between
+
+Lists: contains | notContains
+
+```
+
+For example, if you wanted a list of all messages that have a title
+that includes “Hello”:
+
+```javascript
+
+const messages = await DataStore.query(Message, m => m.title('contains', 'Hello'))
+
+```
+
