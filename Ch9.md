@@ -7,3 +7,8 @@ Instead of interacting with the GraphQL API itself, using queries and mutations,
 
 DataStore then automatically syncs the local data to the GraphQL backend for you as updates are made both locally and remotely.
 
+Using the DataStore SDK, you then only have to perform the
+operations like save, update, and delete, writing directly to DataStore
+itself. DataStore handles everything else for you: it syncs your data to
+the cloud when you have an internet connection, and if you’re not
+online, will queue it for the next time you’re connected.
