@@ -75,3 +75,14 @@ Reading data
 const posts = await DataStore.query(Post); 
 ```
 
+Updating data 
+
+```javascript
+
+const message = await DataStore.query(Message, '123')
+
+await DataStore.save(
+  Post.copyOf(message, updated => { updated.title = 'My new title'})
+)
+
+```
