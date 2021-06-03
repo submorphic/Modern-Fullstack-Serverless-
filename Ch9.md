@@ -39,3 +39,9 @@ models—from the CLI.
 
 
 Now, you are all set up and can begin interacting with DataStore.
+
+### Amplify DataStore Operations
+
+To interact with the Store, first import the DataStore API from Amplify and the Model you’d like to use. From there, you can perform actions against the store.
+
+
