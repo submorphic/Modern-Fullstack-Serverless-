@@ -177,3 +177,14 @@ app with aws-exports.js:
 ```
   ~ npm install @aws-amplify/core @aws-amplify/datastore antd react-color
 ```
+
+Next, initialize a new Amplify project:
+
+```
+  ~ amplify init
+
+  # Follow the steps to give the project a name, environment name, and set the default text editor.
+  # Accept defaults for everything else and choose your AWS Profile
+```
+
+
