@@ -224,3 +224,17 @@ image: String
 createdAt: String
 }
 ```
+
+Now that we have created the GraphQL API, and we have a GraphQL schema to work with, we can create the models we’ll need for working the local DataStore API (based on the GraphQL schema):
+
+```
+  ~ amplify codegen models
+```
+
+
+This will create a new folder in our project called models. Using the models in this folder, we can start interacting with the DataStore API. Deploy the API:
+
+```
+  ~ amplify push --y
+```
+
