@@ -365,3 +365,15 @@ export default App;
 
 ```
 
+## Conclusion 
+
+
+Here are a few things to keep in mind from this chapter:
+
+1. Amplify enables two different APIs to interact with AppSync: the API category as well as DataStore.
+
+2. When using DataStore, you are no longer sending HTTP requests directly to the API. Instead, you are writing to the local storage engine, and DataStore then takes care of syncing to and from the cloud.
+
+3. Amplify DataStore works offline by default.
+
+
