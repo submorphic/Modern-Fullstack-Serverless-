@@ -129,3 +129,22 @@ These predicates enable you to have many ways to retrieve different selection se
 
 ## Building an Offline and Real-Time App with Amplify DataStore
 
+Users of the app can create a new message and all other users will
+receive the message in real time. If a user goes offline, they will
+continue to be able to create messages. Once they are online, the
+messages will be synced with the backend, and all other messages
+created by other users will also be fetched and synced locally.
+Our app will perform three types of operations against the DataStore
+API:
+
+#### save
+Creating a new item in the DataStore; saves the item locally and
+performs a GraphQL mutation behind the scenes.
+
+#### query
+Reading from the DataStore; returns a single item or list (array)
+and performs a GraphQL query behind the scenes.
+
+#### observe
+Listening for changes (create, update, delete) in data and performs
+a GraphQL subscription behind the scenes.
