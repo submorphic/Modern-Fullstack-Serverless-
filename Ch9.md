@@ -213,3 +213,14 @@ Now we will create the AppSync GraphQL API:
   ? Do you want to edit the schema now: Y
 ```
 
+Update the schema with the following type:
+
+```gql
+type Message @model {
+id: ID!
+title: String!
+color: String
+image: String
+createdAt: String
+}
+```
