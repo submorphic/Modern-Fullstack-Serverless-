@@ -251,3 +251,10 @@ First, open src/index.js and configure the Amplify app by adding the following c
   Amplify.configure(config)
 ```
 
+Next, open App.js and update it with the following code:
+
+```jsx
+
+
+```
+
