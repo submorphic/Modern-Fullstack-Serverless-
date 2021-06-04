@@ -148,3 +148,15 @@ and performs a GraphQL query behind the scenes.
 #### observe
 Listening for changes (create, update, delete) in data and performs
 a GraphQL subscription behind the scenes.
+
+
+### Creating the Base Project
+
+To get started, we will create a new React project, initialize an
+Amplify app, and install the dependencies.
+The first thing we will do is create the React project:
+
+```
+  ~ npx create-react-app rtmessageboard
+  ~ cd rtmessageboard
+```
