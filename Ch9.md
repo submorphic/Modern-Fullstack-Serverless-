@@ -302,51 +302,51 @@ function App() {
   }
 
   return (
-  <div style={container}>
-  <h1 style={heading}>Real Time Message Board</h1>
-  <Input
-  onChange={onChange}
-  name="title"
-  placeholder="Message title"
-  value={formState.title}
-  style={input}
-  />
-  <div>
-  <Button
-  onClick={() => updateShowPicker(!showPicker)}
-  style={button}
-  >Toggle Color Picker</Button>
-  <p>Color:
-  <span
-  style={{fontWeight: 'bold', color:
-  formState.color}}>{formState.color}
-  </span>
-  </p>
-  </div>
-  {
-  showPicker && (
-  <SketchPicker
-  color={formState.color}
-  onChange={onChange} /
-  >
-  )
-  }
+    <div style={container}>
+    <h1 style={heading}>Real Time Message Board</h1>
+    <Input
+    onChange={onChange}
+    name="title"
+    placeholder="Message title"
+    value={formState.title}
+    style={input}
+    />
+    <div>
+    <Button
+    onClick={() => updateShowPicker(!showPicker)}
+    style={button}
+    >Toggle Color Picker</Button>
+    <p>Color:
+    <span
+    style={{fontWeight: 'bold', color:
+    formState.color}}>{formState.color}
+    </span>
+    </p>
+    </div>
+    {
+    showPicker && (
+    <SketchPicker
+    color={formState.color}
+    onChange={onChange} /
+    >
+    )
+    }
 
-  <Button type="primary" onClick={createMessage}>Create Message</Button>
+    <Button type="primary" onClick={createMessage}>Create Message</Button>
 
-  {
-  messages.map(message => (
-  <div
-  key={message.id}
-  style={{...messageStyle, backgroundColor:message.color}}
-  >
-  <div style={messageBg}>
-  <p style={messageTitle}>{message.title}</p>
-  </div>
-  </div>
-  ))
-  }
-  </div>
+    {
+    messages.map(message => (
+    <div
+    key={message.id}
+    style={{...messageStyle, backgroundColor:message.color}}
+    >
+    <div style={messageBg}>
+    <p style={messageTitle}>{message.title}</p>
+    </div>
+    </div>
+    ))
+    }
+    </div>
   );
 }
 
