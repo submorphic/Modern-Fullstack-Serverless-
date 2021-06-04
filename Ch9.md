@@ -187,4 +187,29 @@ Next, initialize a new Amplify project:
   # Accept defaults for everything else and choose your AWS Profile
 ```
 
+### Creating the API
+
+Now we will create the AppSync GraphQL API:
+
+```
+  ~ amplify add api
+
+  ? Please select from one of the below mentioned services:GraphQL
+  ? Provide API name: rtmessageboard
+  ? Choose the default authorization type for the API: API key
+  ? Enter a description for the API key: public
+  ? After how many days from now the API key should expire (1-
+  365): 365 (or your
+  preferred expiration)
+  ? Do you want to configure advanced settings for the GraphQL
+  API: Yes
+  ? Configure additional auth types: N
+  ? Configure conflict detection: Y
+  ? Select the default resolution strategy: Auto Merge
+  ? Do you have an annotated GraphQL schema: N
+  ? Do you want a guided schema creation: Y
+  ? What best describes your project: Single object with
+  fields
+  ? Do you want to edit the schema now: Y
+```
 
