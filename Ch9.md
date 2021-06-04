@@ -160,3 +160,20 @@ The first thing we will do is create the React project:
   ~ npx create-react-app rtmessageboard
   ~ cd rtmessageboard
 ```
+
+Next, we will install the local dependencies.
+
+Amplify supports a full installation of Amplify, and scoped (modular)
+installations for specific APIs. Scoped packages reduce the bundle
+size, since we’re installing only the code that we are using. Since we
+are only using the DataStore API, we can install the scoped DataStore
+package.
+
+We will also install Ant Design (antd) for styling, React Color
+(react-color) for an easy-to-use color picker, and the scoped
+dependency for Amplify Core in order to still configure the Amplify
+app with aws-exports.js:
+
+```
+  ~ npm install @aws-amplify/core @aws-amplify/datastore antd react-color
+```
