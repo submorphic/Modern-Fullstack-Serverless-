@@ -18,3 +18,5 @@ Part 4 : https://dev.to/aws-builders/modern-full-stack-serverless-part-iv-54bl
 Part 5: https://dev.to/aws-builders/modern-full-stack-serverless-part-v-35j6
 
 Part 6: https://dev.to/aws-builders/modern-full-stack-serverless-part-vi-25e3
+
+Part 7: https://dev.to/aws-builders/modern-full-stack-serverless-part-vii-351l
