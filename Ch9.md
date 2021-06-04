@@ -238,3 +238,16 @@ This will create a new folder in our project called models. Using the models in 
   ~ amplify push --y
 ```
 
+### Writing the Client-Side Code
+
+First, open src/index.js and configure the Amplify app by adding the following code below the last import:
+
+```jsx
+  
+  import 'antd/dist/antd.css'
+  import Amplify from '@aws-amplify/core'
+  import config from './aws-exports'
+
+  Amplify.configure(config)
+```
+
